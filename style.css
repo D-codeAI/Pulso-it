@@ -108,13 +108,14 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.75rem;
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--text-muted);
     font-weight: 500;
+    font-size: 0.95rem;
     transition: var(--transition);
 }
 
@@ -212,6 +213,7 @@ body {
     display: flex;
     gap: 1rem;
     margin-bottom: 2.5rem;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -261,6 +263,11 @@ body {
 
 .btn-block {
     width: 100%;
+}
+
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.05rem;
 }
 
 .hero-stats {
@@ -330,6 +337,122 @@ body {
 
 .card-list li i {
     color: var(--accent);
+}
+
+/* Professional Animated Flyer Section */
+.flyer-section {
+    padding: 60px 0;
+    background: var(--bg-color);
+}
+
+.animated-flyer-card {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #059669 100%);
+    color: #ffffff;
+    border-radius: 24px;
+    padding: 3.5rem 2.5rem;
+    text-align: center;
+    box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.25), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    animation: flyerGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes flyerGlow {
+    0% {
+        box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.2);
+    }
+    100% {
+        box-shadow: 0 20px 35px -5px rgba(5, 150, 105, 0.4);
+    }
+}
+
+.flyer-badge {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 0.4rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.animated-flyer-card h2 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.animated-flyer-card h2 span {
+    color: #34d399;
+    text-shadow: 0 2px 10px rgba(16, 185, 129, 0.4);
+}
+
+.animated-flyer-card p {
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+    opacity: 0.95;
+}
+
+.flyer-countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.countdown-box {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+    min-width: 85px;
+    animation: floatCountdown 3s ease-in-out infinite alternate;
+}
+
+.countdown-box:nth-child(even) {
+    animation-delay: 1.5s;
+}
+
+@keyframes floatCountdown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-6px); }
+}
+
+.countdown-box span {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.countdown-box small {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #94a3b8;
+}
+
+.btn-light-glow {
+    background-color: #ffffff;
+    color: #1e3a8a;
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+
+.btn-light-glow:hover {
+    background-color: #f8fafc;
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(255, 255, 255, 0.4);
 }
 
 /* Sections General */
@@ -583,7 +706,7 @@ section {
     margin: 0;
 }
 
-/* Contact Section */
+/* Contact & Google Form Embed Section */
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -595,54 +718,39 @@ section {
     box-shadow: var(--shadow);
 }
 
-.contact-form {
+.google-form-cta {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    justify-content: center;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.form-group label {
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.form-group input, .form-group select, .form-group textarea {
-    padding: 0.85rem 1rem;
-    border-radius: 8px;
+.cta-banner-card {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(5, 150, 105, 0.08) 100%);
     border: 1px solid var(--border-color);
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: 'Inter', sans-serif;
-    font-size: 0.95rem;
-    transition: var(--transition);
-}
-
-.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary);
-}
-
-.form-success {
-    background-color: rgba(5, 150, 105, 0.1);
-    color: var(--accent);
-    padding: 0.85rem;
-    border-radius: 8px;
-    font-weight: 600;
+    border-radius: 16px;
+    padding: 2.5rem;
     text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
-.hidden {
-    display: none;
+.cta-icon {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.cta-banner-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cta-banner-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
 }
 
 .contact-info {
@@ -726,8 +834,10 @@ section {
 
 /* Responsive Design */
 @media (max-width: 968px) {
-    .hero-container, .course-grid, .about-grid, .contact-wrapper {
+    .hero-container, .course-grid, .about-grid, .contact-wrapper, .flyer-countdown {
         grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: center;
     }
     
     .hero-content {
@@ -740,6 +850,10 @@ section {
     
     .hero-stats {
         justify-content: center;
+    }
+
+    .animated-flyer-card h2 {
+        font-size: 2rem;
     }
 
     .contact-info {
