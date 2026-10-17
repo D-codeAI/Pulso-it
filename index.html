@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexGen IT Academy | Master Tech, Data, Cloud & GenAI Careers</title>
-    <meta name="description" content="Accelerate your tech career with industry-aligned training in Linux, SQL, Python, Data Engineering, DevOps, Machine Learning, and GenAI & Agentic AI.">
+    <title>PulsoGen IT Academy | Master Tech, Data, Cloud & GenAI Careers</title>
+    <meta name="description" content="Accelerate your tech career with industry-aligned training in Linux, SQL, Python, Data Engineering, DevOps, Machine Learning, and GenAI & Agentic AI in Hyderabad.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+    <!-- Skip to Content for Accessibility -->
+    <a href="#courses" class="skip-link">Skip to main content</a>
 
     <!-- Navigation Bar -->
     <header class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">
-                <i class="fa-solid fa-graduation-cap"></i> NexGen<span>IT</span>
+            <a href="#hero" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i> Pulso<span>Gen</span>
             </a>
-            <nav class="nav-links" id="navLinks">
+            <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
                 <a href="#hero">Home</a>
                 <a href="#courses">Courses & Paths</a>
                 <a href="#salaries">Salary Guide</a>
@@ -33,293 +36,295 @@
                 <button id="themeToggle" aria-label="Toggle Dark/Light Mode" class="theme-btn">
                     <i class="fa-solid fa-moon"></i>
                 </button>
-                <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle Menu">
+                <button class="mobile-menu-btn" id="menuBtn" aria-expanded="false" aria-label="Toggle Navigation Menu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <span class="badge"><i class="fa-solid fa-bolt"></i> Future-Proof Your Tech Career</span>
-                <h1>Build High-Paying Skills in <span>Data, Cloud & GenAI</span></h1>
-                <p>Industry-focused training programs ranging from foundational Linux & Python to advanced Generative AI, Agentic AI, and Cloud Architecture. Unlock salaries up to ₹30 LPA[cite: 1, 2].</p>
-                <div class="hero-btns">
-                    <a href="#courses" class="btn btn-primary">Explore Courses <i class="fa-solid fa-arrow-right"></i></a>
-                    <a href="#salaries" class="btn btn-secondary">View Salary Guide <i class="fa-solid fa-chart-line"></i></a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <h3>₹2.5 - ₹30 LPA</h3>
-                        <p>Indicative Salary Range[cite: 1, 2]</p>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="badge"><i class="fa-solid fa-bolt"></i> Future-Proof Your Tech Career</span>
+                    <h1>Build High-Paying Skills in <span>Data, Cloud & GenAI</span></h1>
+                    <p>Industry-focused training programs ranging from foundational Linux and Python to advanced Generative AI, Agentic AI, and Cloud Architecture based in Hyderabad.</p>
+                    <div class="hero-btns">
+                        <a href="#courses" class="btn btn-primary">Explore Courses <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#salaries" class="btn btn-secondary">View Salary Guide <i class="fa-solid fa-chart-line"></i></a>
                     </div>
-                    <div class="stat-item">
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>₹2.5 - ₹30 LPA</h3>
+                            <p>Indicative Salary Range</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Practical & Project-Based</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>3 Tiers</h3>
+                            <p>From Beginner to Advanced</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <div class="floating-card-header">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span>Top Career Track</span>
+                    </div>
+                    <h3>GenAI & Agentic AI Engineer</h3>
+                    <p class="card-salary">Freshers: ₹5–12 LPA | Exp: ₹12–30 LPA</p>
+                    <ul class="card-list">
+                        <li><i class="fa-solid fa-check"></i> Python & Advanced APIs</li>
+                        <li><i class="fa-solid fa-check"></i> LangChain, LLMs & Fine-tuning</li>
+                        <li><i class="fa-solid fa-check"></i> AI Agent Development & MLOps</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-block">Secure Your Spot</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses & Career Paths Section -->
+        <section id="courses" class="courses">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Comprehensive Training Tiers</h2>
+                    <p>Designed for fresh graduates, career switchers, and working professionals aiming for high-growth technical roles.</p>
+                </div>
+
+                <div class="course-grid">
+                    <!-- Tier 1 -->
+                    <div class="course-card">
+                        <div class="course-header">
+                            <span class="tier-tag">Tier 1</span>
+                            <h3>Foundation Courses</h3>
+                            <p class="course-tech">Linux, SQL & Python</p>
+                        </div>
+                        <div class="course-body">
+                            <div class="salary-pill">
+                                <span>Fresher: ₹2.5–6 LPA</span>
+                                <span>Experienced: ₹5–15 LPA</span>
+                            </div>
+                            <p class="target-audience"><strong>Suitable for:</strong> Fresh graduates, beginners, and career switchers building their technical foundation.</p>
+                            <h4>Key Job Roles:</h4>
+                            <ul class="role-list">
+                                <li><i class="fa-solid fa-angle-right"></i> Linux Support Engineer</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Technical Support Engineer</li>
+                                <li><i class="fa-solid fa-angle-right"></i> SQL / Database Support Engineer</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Junior Python Developer</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Junior Data Analyst</li>
+                            </ul>
+                        </div>
+                        <div class="course-footer">
+                            <a href="#contact" class="btn btn-outline">Enquire Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Tier 2 -->
+                    <div class="course-card popular">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="course-header">
+                            <span class="tier-tag">Tier 2</span>
+                            <h3>Foundation + Intermediate</h3>
+                            <p class="course-tech">Data Engineering, DevOps, Analytics</p>
+                        </div>
+                        <div class="course-body">
+                            <div class="salary-pill">
+                                <span>Fresher: ₹3.5–10 LPA</span>
+                                <span>Experienced: ₹7–25 LPA</span>
+                            </div>
+                            <p class="target-audience"><strong>Suitable for:</strong> Graduates with programming fundamentals and professionals seeking specialization.</p>
+                            <h4>Key Job Roles:</h4>
+                            <ul class="role-list">
+                                <li><i class="fa-solid fa-angle-right"></i> Data Analyst & BI Analyst</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Junior Data Engineer</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Junior DevOps Engineer</li>
+                                <li><i class="fa-solid fa-angle-right"></i> ETL & Python Automation Developer</li>
+                                <li><i class="fa-solid fa-angle-right"></i> GenAI Application Developer</li>
+                            </ul>
+                        </div>
+                        <div class="course-footer">
+                            <a href="#contact" class="btn btn-primary">Enquire Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Tier 3 -->
+                    <div class="course-card">
+                        <div class="course-header">
+                            <span class="tier-tag">Tier 3</span>
+                            <h3>Advanced Specialization</h3>
+                            <p class="course-tech">ML, Deep Learning, GenAI & GCP</p>
+                        </div>
+                        <div class="course-body">
+                            <div class="salary-pill">
+                                <span>Fresher: ₹5–12 LPA</span>
+                                <span>Experienced: ₹12–30 LPA</span>
+                            </div>
+                            <p class="target-audience"><strong>Suitable for:</strong> Engineers aiming for cutting-edge AI, machine learning, and cloud engineering positions.</p>
+                            <h4>Key Job Roles:</h4>
+                            <ul class="role-list">
+                                <li><i class="fa-solid fa-angle-right"></i> Machine Learning Engineer</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Junior Data Scientist</li>
+                                <li><i class="fa-solid fa-angle-right"></i> NLP & Computer Vision Engineer</li>
+                                <li><i class="fa-solid fa-angle-right"></i> Generative AI & LLM Engineer</li>
+                                <li><i class="fa-solid fa-angle-right"></i> MLOps & AI Agent Developer</li>
+                            </ul>
+                        </div>
+                        <div class="course-footer">
+                            <a href="#contact" class="btn btn-outline">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Salary Guide Section -->
+        <section id="salaries" class="salaries">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Career Opportunities & Salary Potential</h2>
+                    <p>Approximate annual CTC ranges in the Indian IT job market based on practical skills and role.</p>
+                </div>
+
+                <div class="table-container">
+                    <table class="salary-table">
+                        <thead>
+                            <tr>
+                                <th>Course Category</th>
+                                <th>Typical Fresher Package (0–1 Year)</th>
+                                <th>Experienced Package (3–5 Years)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Foundation</strong> <br><small>Linux, SQL, Python</small></td>
+                                <td><span class="salary-badge">₹2.5 – 6 LPA</span></td>
+                                <td><span class="salary-badge high">₹5 – 15 LPA</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Foundation + Intermediate</strong> <br><small>Data Engineering, DevOps, Analytics</small></td>
+                                <td><span class="salary-badge">₹3.5 – 10 LPA</span></td>
+                                <td><span class="salary-badge high">₹7 – 25 LPA</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Advanced</strong> <br><small>ML, Deep Learning, GenAI & GCP</small></td>
+                                <td><span class="salary-badge">₹5 – 12 LPA</span></td>
+                                <td><span class="salary-badge high">₹12 – 30 LPA</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="disclaimer">*Note: Salary packages are illustrative market estimates for the Indian IT job market. Actual compensation depends on practical skills, projects, certifications, employer, location, and interview performance.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container about-grid">
+                <div class="about-text">
+                    <h2>Why Learn With PulsoGen?</h2>
+                    <p>We bridge the gap between traditional education and high-demand industry requirements. Our curriculum is built around real-world projects, API integrations, cloud deployments, and rigorous coding practice.</p>
+                    <div class="features-list">
+                        <div class="feature-box">
+                            <i class="fa-solid fa-code"></i>
+                            <div>
+                                <h4>Hands-on Project Training</h4>
+                                <p>Build real applications, data pipelines, and AI models for your professional portfolio.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                            <div>
+                                <h4>Industry Expert Mentors</h4>
+                                <p>Learn directly through software architectural insights, data methodologies, and cloud engineering standards.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fa-solid fa-rocket"></i>
+                            <div>
+                                <h4>Career & Interview Prep</h4>
+                                <p>Mock interviews, resume refinement, and targeted interview preparation guidance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card-box">
+                    <div class="stat-box-large">
+                        <h3>30+</h3>
+                        <p>High-Demand Job Roles Mapped</p>
+                    </div>
+                    <div class="stat-box-large">
                         <h3>100%</h3>
-                        <p>Practical & Project-Based</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>3 Tiers</h3>
-                        <p>From Beginner to Advanced</p>
+                        <p>Practical & Skill-Oriented Curriculum</p>
                     </div>
                 </div>
             </div>
-            <div class="hero-card">
-                <div class="floating-card-header">
-                    <i class="fa-solid fa-microchip"></i>
-                    <span>Top Career Track</span>
+        </section>
+
+        <!-- Contact & Enquiry Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Start Your Journey Today</h2>
+                    <p>Fill out the form below to request course details, fee structure, or career counselling.</p>
                 </div>
-                <h3>GenAI & Agentic AI Engineer</h3>
-                <p class="card-salary">Freshers: ₹5–12 LPA | Exp: ₹12–30 LPA[cite: 1, 2]</p>
-                <ul class="card-list">
-                    <li><i class="fa-solid fa-check"></i> Python & Advanced APIs</li>
-                    <li><i class="fa-solid fa-check"></i> LangChain, LLMs & Fine-tuning</li>
-                    <li><i class="fa-solid fa-check"></i> AI Agent Development & MLOps</li>
-                </ul>
-                <a href="#contact" class="btn btn-primary btn-block">Secure Your Spot</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Courses & Career Paths Section -->
-    <section id="courses" class="courses">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Comprehensive Training Tiers</h2>
-                <p>Designed for fresh graduates, career switchers, and working professionals aiming for high-growth technical roles[cite: 1, 2].</p>
-            </div>
-
-            <div class="course-grid">
-                <!-- Tier 1 -->
-                <div class="course-card">
-                    <div class="course-header">
-                        <span class="tier-tag">Tier 1</span>
-                        <h3>Foundation Courses</h3>
-                        <p class="course-tech">Linux, SQL & Python</p>
-                    </div>
-                    <div class="course-body">
-                        <div class="salary-pill">
-                            <span>Fresher: ₹2.5–6 LPA</span>
-                            <span>Experienced: ₹5–15 LPA</span>
+                <div class="contact-wrapper">
+                    <form id="contactForm" class="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" required placeholder="Enter your full name">
                         </div>
-                        <p class="target-audience"><strong>Suitable for:</strong> Fresh graduates, beginners, and career switchers building their technical foundation[cite: 2].</p>
-                        <h4>Key Job Roles:</h4>
-                        <ul class="role-list">
-                            <li><i class="fa-solid fa-angle-right"></i> Linux Support Engineer[cite: 2]</li>
-                            <li><i class="fa-solid fa-angle-right"></i> Technical Support Engineer[cite: 2]</li>
-                            <li><i class="fa-solid fa-angle-right"></i> SQL / Database Support Engineer[cite: 2]</li>
-                            <li><i class="fa-solid fa-angle-right"></i> Junior Python Developer[cite: 2]</li>
-                            <li><i class="fa-solid fa-angle-right"></i> Junior Data Analyst[cite: 2]</li>
-                        </ul>
-                    </div>
-                    <div class="course-footer">
-                        <a href="#contact" class="btn btn-outline">Enquire Now</a>
-                    </div>
-                </div>
-
-                <!-- Tier 2 -->
-                <div class="course-card popular">
-                    <div class="popular-badge">Most Popular</div>
-                    <div class="course-header">
-                        <span class="tier-tag">Tier 2</span>
-                        <h3>Foundation + Intermediate</h3>
-                        <p class="course-tech">Data Engineering, DevOps, Analytics</p>
-                    </div>
-                    <div class="course-body">
-                        <div class="salary-pill">
-                            <span>Fresher: ₹3.5–10 LPA</span>
-                            <span>Experienced: ₹7–25 LPA</span>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" required placeholder="name@example.com">
                         </div>
-                        <p class="target-audience"><strong>Suitable for:</strong> Graduates with programming fundamentals and professionals seeking specialization[cite: 2].</p>
-                        <h4>Key Job Roles:</h4>
-                        <ul class="role-list">
-                            <li><i class="fa-solid fa-angle-right"></i> Data Analyst & BI Analyst[cite: 2]</li>
-                            <li><i class="fa-solid fa-angle-right"></i> Junior Data Engineer[cite: 2]</li>
-                            <li><i class="fa-solid fa-angle-right"></i> Junior DevOps Engineer[cite: 2]</li>
-                            <li><i class="fa-solid fa-angle-right"></i> ETL Developer & Python Automation[cite: 2]</li>
-                            <li><i class="fa-solid fa-angle-right"></i> GenAI Application Developer[cite: 2]</li>
-                        </ul>
-                    </div>
-                    <div class="course-footer">
-                        <a href="#contact" class="btn btn-primary">Enquire Now</a>
-                    </div>
-                </div>
-
-                <!-- Tier 3 -->
-                <div class="course-card">
-                    <div class="course-header">
-                        <span class="tier-tag">Tier 3</span>
-                        <h3>Advanced Specialization</h3>
-                        <p class="course-tech">ML, Deep Learning, GenAI & GCP</p>
-                    </div>
-                    <div class="course-body">
-                        <div class="salary-pill">
-                            <span>Fresher: ₹5–12 LPA</span>
-                            <span>Experienced: ₹12–30 LPA</span>
+                        <div class="form-group">
+                            <label for="courseSelect">Interested Course Track *</label>
+                            <select id="courseSelect" required>
+                                <option value="">Select a track</option>
+                                <option value="foundation">Foundation (Linux, SQL, Python)</option>
+                                <option value="intermediate">Foundation + Intermediate (Data & DevOps)</option>
+                                <option value="advanced">Advanced (ML, GenAI, GCP)</option>
+                            </select>
                         </div>
-                        <p class="target-audience"><strong>Suitable for:</strong> Engineers aiming for cutting-edge AI, machine learning, and cloud engineering positions.</p>
-                        <h4>Key Job Roles:</h4>
-                        <ul class="role-list">
-                            <li><i class="fa-solid fa-angle-right"></i> Machine Learning Engineer[cite: 2]</li>
-                            <li><i class="fa-solid fa-angle-right"></i> Junior Data Scientist[cite: 2]</li>
-                            <li><i class="fa-solid fa-angle-right"></i> NLP & Computer Vision Engineer[cite: 2]</li>
-                            <li><i class="fa-solid fa-angle-right"></i> Generative AI & LLM Engineer[cite: 2]</li>
-                            <li><i class="fa-solid fa-angle-right"></i> MLOps & AI Agent Developer[cite: 2]</li>
-                        </ul>
-                    </div>
-                    <div class="course-footer">
-                        <a href="#contact" class="btn btn-outline">Enquire Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Salary Potential Matrix Section -->
-    <section id="salaries" class="salaries">
-        <div class="container">
-            <div class="section-title">
-                <h2>Career Opportunities & Salary Potential</h2>
-                <p>Approximate annual CTC ranges in the Indian IT job market based on practical skills and role[cite: 1, 2].</p>
-            </div>
-
-            <div class="table-container">
-                <table class="salary-table">
-                    <thead>
-                        <tr>
-                            <th>Course Category</th>
-                            <th>Typical Fresher Package (0-1 Yr)</th>
-                            <th>Experienced Package (3-5 Yrs)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Foundation</strong> <br><small>Linux, SQL, Python</small></td>
-                            <td><span class="salary-badge">₹2.5 – 6 LPA</span></td>
-                            <td><span class="salary-badge high">₹5 – 15 LPA</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Foundation + Intermediate</strong> <br><small>Data Engineering, DevOps, Analytics</small></td>
-                            <td><span class="salary-badge">₹3.5 – 10 LPA</span></td>
-                            <td><span class="salary-badge high">₹7 – 25 LPA</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Advanced</strong> <br><small>ML, Deep Learning, GenAI & GCP</small></td>
-                            <td><span class="salary-badge">₹5 – 12 LPA</span></td>
-                            <td><span class="salary-badge high">₹12 – 30 LPA</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <p class="disclaimer">*Note: Salary packages are indicative estimates for the Indian IT job market. Actual compensation depends on practical skills, projects, certifications, employer, and interview performance[cite: 1, 2].</p>
-        </div>
-    </section>
-
-    <!-- About & Why Choose Us -->
-    <section id="about" class="about">
-        <div class="container about-grid">
-            <div class="about-text">
-                <h2>Why Learn With NexGen IT?</h2>
-                <p>We bridge the gap between traditional education and high-demand industry requirements. Our curriculum is built around real-world projects, API integrations, cloud deployments, and rigorous coding practice.</p>
-                <div class="features-list">
-                    <div class="feature-box">
-                        <i class="fa-solid fa-code"></i>
-                        <div>
-                            <h4>Hands-on Project Training</h4>
-                            <p>Build real applications, data pipelines, and AI models for your professional portfolio.</p>
+                        <div class="form-group">
+                            <label for="message">Your Message / Background</label>
+                            <textarea id="message" rows="4" placeholder="Tell us about your background or career goals..."></textarea>
                         </div>
-                    </div>
-                    <div class="feature-box">
-                        <i class="fa-solid fa-chalkboard-user"></i>
-                        <div>
-                            <h4>Industry Expert Mentors</h4>
-                            <p>Learn directly from software architects, data scientists, and DevOps practitioners.</p>
+                        <button type="submit" class="btn btn-primary btn-block">Submit Enquiry</button>
+                        <div id="formSuccess" class="form-success hidden" role="status">
+                            <i class="fa-solid fa-circle-check"></i> Thank you! Your enquiry details have been processed. We will contact you soon.
                         </div>
-                    </div>
-                    <div class="feature-box">
-                        <i class="fa-solid fa-rocket"></i>
-                        <div>
-                            <h4>Career & Interview Prep</h4>
-                            <p>Mock interviews, resume refinement, and targeted job market placement support.</p>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:admissions@pulsogen.edu">admissions@pulsogen.edu</a></p>
+                        <p><i class="fa-solid fa-phone"></i> <a href="tel:+919503800703">+91 (950) 380-0703</a></p>
+                        <p><i class="fa-solid fa-location-dot"></i> Hi-Tech City, Hyderabad, India</p>
+                        <div class="social-links" aria-label="Social Media Links">
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/d-codeai" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="about-card-box">
-                <div class="stat-box-large">
-                    <h3>30+</h3>
-                    <p>High-Demand Job Roles Mapped</p>
-                </div>
-                <div class="stat-box-large">
-                    <h3>100%</h3>
-                    <p>Practical & Skill-Oriented Curriculum</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact / Consultation Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Start Your Journey Today</h2>
-                <p>Fill out the form below to request course details, fee structure, or career counselling.</p>
-            </div>
-            <div class="contact-wrapper">
-                <form id="contactForm" class="contact-form" onsubmit="handleFormSubmit(event)">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" required placeholder="Enter your full name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" required placeholder="name@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="courseSelect">Interested Course Track</label>
-                        <select id="courseSelect" required>
-                            <option value="">Select a track</option>
-                            <option value="foundation">Foundation (Linux, SQL, Python)</option>
-                            <option value="intermediate">Foundation + Intermediate (Data & DevOps)</option>
-                            <option value="advanced">Advanced (ML, GenAI, GCP)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message / Background</label>
-                        <textarea id="message" rows="4" placeholder="Tell us about your background or career goals..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Submit Enquiry</button>
-                    <div id="formSuccess" class="form-success hidden">
-                        <i class="fa-solid fa-circle-check"></i> Thank you! Your enquiry has been received. We will contact you soon.
-                    </div>
-                </form>
-                <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <p><i class="fa-solid fa-envelope"></i> admissions@nexgenit.edu</p>
-                    <p><i class="fa-solid fa-phone"></i> +91 (987) 654-3210</p>
-                    <p><i class="fa-solid fa-location-dot"></i> Tech Park Hub, Bangalore / Online Worldwide</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
-            <p>&copy; 2026 NexGen IT Academy. All rights reserved.</p>
-            <p class="disclaimer-text">Disclaimer: Salary figures are approximate market estimates and training completion does not guarantee specific placement[cite: 1, 2].</p>
+            <p>&copy; <span id="currentYear">2026</span> PulsoGen IT Academy. All rights reserved.</p>
+            <p class="disclaimer-text">Disclaimer: Salary figures are approximate market estimates and course completion does not guarantee specific placement or compensation.</p>
         </div>
     </footer>
 
     <!-- JavaScript File -->
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

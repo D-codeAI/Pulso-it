@@ -2,7 +2,6 @@
 const themeToggle = document.getElementById('themeToggle');
 const htmlElement = document.documentElement;
 
-// Check for saved user preference
 const savedTheme = localStorage.getItem('theme') || 'light';
 htmlElement.setAttribute('data-theme', savedTheme);
 updateThemeIcon(savedTheme);
@@ -31,8 +30,10 @@ const navLinks = document.getElementById('navLinks');
 
 menuBtn.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+    const isExpanded = navLinks.classList.contains('active');
+    menuBtn.setAttribute('aria-expanded', isExpanded);
     const icon = menuBtn.querySelector('i');
-    if (navLinks.classList.contains('active')) {
+    if (isExpanded) {
         icon.className = 'fa-solid fa-xmark';
     } else {
         icon.className = 'fa-solid fa-bars';
@@ -43,21 +44,25 @@ menuBtn.addEventListener('click', () => {
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
+        menuBtn.setAttribute('aria-expanded', 'false');
         menuBtn.querySelector('i').className = 'fa-solid fa-bars';
     });
 });
 
-// Contact Form Handler simulation
+// Dynamic Copyright Year
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+// Contact Form Handler Simulation
 function handleFormSubmit(event) {
     event.preventDefault();
     const form = document.getElementById('contactForm');
     const successMsg = document.getElementById('formSuccess');
     
-    // Simulate successful submission without server backend
+    // Reset form fields and display confirmation state safely
     form.reset();
     successMsg.classList.remove('hidden');
     
     setTimeout(() => {
         successMsg.classList.add('hidden');
-    }, 5000);
+    }, 6000);
 }
