@@ -52,17 +52,31 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 // Dynamic Copyright Year
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-// Contact Form Handler Simulation
-function handleFormSubmit(event) {
-    event.preventDefault();
-    const form = document.getElementById('contactForm');
-    const successMsg = document.getElementById('formSuccess');
-    
-    // Reset form fields and display confirmation state safely
-    form.reset();
-    successMsg.classList.remove('hidden');
-    
-    setTimeout(() => {
-        successMsg.classList.add('hidden');
-    }, 6000);
+// Countdown Timer for January 2027 Batch
+const batchStartDate = new Date('January 1, 2027 00:00:00').getTime();
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = batchStartDate - now;
+
+    if (distance < 0) {
+        document.getElementById('daysCount').textContent = '00';
+        document.getElementById('hoursCount').textContent = '00';
+        document.getElementById('minsCount').textContent = '00';
+        document.getElementById('secsCount').textContent = '00';
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById('daysCount').textContent = String(days).padStart(2, '0');
+    document.getElementById('hoursCount').textContent = String(hours).padStart(2, '0');
+    document.getElementById('minsCount').textContent = String(minutes).padStart(2, '0');
+    document.getElementById('secsCount').textContent = String(seconds).padStart(2, '0');
 }
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
