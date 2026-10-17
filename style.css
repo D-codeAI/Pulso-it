@@ -24,7 +24,7 @@
     --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 
-/* Base Styles */
+/* Base & Accessibility */
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +41,21 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     transition: var(--transition);
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary);
+    color: white;
+    padding: 8px;
+    z-index: 2000;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
 }
 
 .container {
@@ -79,7 +94,7 @@ body {
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 0.5r;
+    gap: 0.5rem;
 }
 
 .logo i {
@@ -649,6 +664,16 @@ section {
     align-items: center;
     gap: 0.75rem;
     color: var(--text-muted);
+}
+
+.contact-info a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-info a:hover {
+    color: var(--primary);
 }
 
 .contact-info i {
