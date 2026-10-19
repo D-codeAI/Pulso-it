@@ -1,348 +1,2221 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PulsoGen IT Academy | Master Tech, Data, Cloud & GenAI Careers</title>
-    <meta name="description" content="Accelerate your tech career with industry-aligned training in Linux, SQL, Python, Data Engineering, DevOps, Machine Learning, and GenAI & Agentic AI in Hyderabad.">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>PulsoGen IT Academy | Premier IT Coaching — Linux, Python, Data Engineering, DevOps & GenAI</title>
+  <meta name="title" content="PulsoGen IT Academy | Premier IT Coaching — Linux, Python, Data Engineering, DevOps & GenAI">
+  <meta name="description" content="Accelerate your IT career with practical coaching in Linux, SQL, Python, Data Engineering, DevOps, GCP, Machine Learning, and Generative AI. Explore indicative salary benchmarks from ₹2.5 LPA to ₹30 LPA.">
+  <meta name="keywords" content="IT Coaching Class, Linux SQL Python Course, Data Engineer Training, DevOps Coaching, Generative AI Course, Agentic AI, GCP Training, IT Job Placements India">
+  <meta name="author" content="PulsoGen IT Academy">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0ea5e9">
+  <link rel="canonical" href="https://pulsogenacademy.com/">
+  
+  <!-- Favicon and App Manifest -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="manifest" href="assets/manifest.json">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pulsogenacademy.com/">
+  <meta property="og:title" content="PulsoGen IT Academy — Hands-On IT Coaching & Career Accelerator">
+  <meta property="og:description" content="From Linux & SQL foundations to cutting-edge Generative AI & Cloud Data Engineering. Real projects, 1-on-1 mentoring, and industry career pathways.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://pulsogenacademy.com/">
+  <meta property="twitter:title" content="PulsoGen IT Academy — Hands-On IT Coaching & Career Accelerator">
+  <meta property="twitter:description" content="Industry-ready IT coaching across Linux, Python, Data Engineering, DevOps, and Generative AI with proven career pathways.">
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;850&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data: JSON-LD for EducationalOrganization & Courses & FAQs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://pulsogenacademy.com/#organization",
+        "name": "PulsoGen IT Academy",
+        "url": "https://pulsogenacademy.com",
+        "logo": "https://pulsogenacademy.com/assets/favicon.svg",
+        "description": "Premier IT training academy specializing in practical Linux, SQL, Python, Data Engineering, DevOps, Cloud GCP, and Generative AI coaching.",
+        "email": "admissions@pulsogenacademy.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Tech Hub Park, HITEC City",
+          "addressLocality": "Hyderabad",
+          "addressRegion": "Telangana",
+          "postalCode": "500081",
+          "addressCountry": "IN"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "1420",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      },
+      {
+        "@type": "Course",
+        "name": "Foundation IT Career Track: Linux, SQL & Python",
+        "description": "Master Linux systems administration, SQL relational database queries, and Python programming fundamentals with live projects.",
+        "provider": {
+          "@id": "https://pulsogenacademy.com/#organization"
+        },
+        "educationalCredentialAwarded": "Certified IT Systems & Python Associate"
+      },
+      {
+        "@type": "Course",
+        "name": "Intermediate IT Track: Data Engineering, DevOps & Analytics",
+        "description": "Build high-throughput data pipelines with Apache Spark & Airflow, containerization with Docker & Kubernetes, and CI/CD pipelines.",
+        "provider": {
+          "@id": "https://pulsogenacademy.com/#organization"
+        },
+        "educationalCredentialAwarded": "Certified Cloud Data & DevOps Specialist"
+      },
+      {
+        "@type": "Course",
+        "name": "Advanced IT Masterclass: ML, Deep Learning, GenAI & GCP",
+        "description": "State-of-the-art training in LLM applications, RAG pipelines, autonomous agentic AI frameworks, and Google Cloud Platform MLOps.",
+        "provider": {
+          "@id": "https://pulsogenacademy.com/#organization"
+        },
+        "educationalCredentialAwarded": "Certified Generative AI & MLOps Architect"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who is eligible for the Foundation course? Can non-IT graduates enroll?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Our Foundation track (Linux, SQL & Python) starts from absolute ground zero and is tailored for fresh college graduates, non-IT degree holders, and career switchers looking to break into technology roles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are the salary ranges in the brochure guaranteed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Salary packages are indicative estimates for the Indian IT job market. Actual compensation depends on practical skills, projects, certifications, hiring company, location, and individual interview performance. We provide comprehensive placement preparation and interview pipelines."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do students work on live cloud infrastructure like GCP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. Every enrolled student gets dedicated access to cloud sandbox environments, including Google Cloud Platform (Vertex AI, BigQuery, Compute Engine) and hands-on Linux servers."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <!-- Accessibility Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Skip to Content for Accessibility -->
-    <a href="#courses" class="skip-link">Skip to main content</a>
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress" role="progressbar" aria-label="Reading progress"></div>
 
-    <!-- Navigation Bar -->
-    <header class="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="logo">
-                <i class="fa-solid fa-graduation-cap"></i> Pulso<span>Gen</span>
+  <!-- Announcement Topbar -->
+  <aside class="topbar" aria-label="Admissions Announcement">
+    <div class="container topbar-content">
+      <div class="topbar-pill">
+        <span class="fire-icon">🔥</span>
+        <span><strong>Admissions Open:</strong> Flagship Batches Starting <strong>January 2027</strong> | Live GCP Sandboxes & Dedicated Labs</span>
+      </div>
+      <div class="topbar-contacts">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScu2wUqKz4HDeXM9sKUUvp8BlwebQ2eAm156qD3MqVPBlk1_w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" aria-label="Book Free Demo" style="color: var(--sky-300);">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+          <span>Book Free Demo & Admissions</span>
+        </a>
+        <a href="mailto:admissions@pulsogenacademy.com" aria-label="Email Admissions">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>admissions@pulsogenacademy.com</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Header & Main Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container navbar">
+      <a href="#hero" class="brand-logo" aria-label="PulsoGen IT Academy Home">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+        </div>
+        <div>
+          <span class="brand-text">Pulso<span>Gen</span></span>
+          <span class="brand-tag">IT Career Academy</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+        <a href="#january-2027-flyer" class="nav-link" style="color: var(--sky-600); font-weight: 700;">Jan 2027 Batch</a>
+        <a href="#career-salaries" class="nav-link">Career & Salaries</a>
+        <a href="#calculator" class="nav-link">ROI Calculator</a>
+        <a href="#courses" class="nav-link">Courses</a>
+        <a href="#pedagogy" class="nav-link">Why Us</a>
+        <a href="#projects" class="nav-link">Capstones</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#faqs" class="nav-link">FAQs</a>
+      </nav>
+
+      <!-- Desktop Header CTAs -->
+      <div class="nav-cta-group">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm btn-3d" aria-label="Confirm Batch Enrollment">
+          Confirm Enrollment
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScu2wUqKz4HDeXM9sKUUvp8BlwebQ2eAm156qD3MqVPBlk1_w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm btn-glow btn-3d" aria-label="Book Free Demo">
+          Book Free Demo
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation" role="dialog" aria-modal="true">
+    <div>
+      <div class="brand-logo">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+        </div>
+        <div>
+          <span class="brand-text">Pulso<span>Gen</span></span>
+          <span class="brand-tag">IT Career Academy</span>
+        </div>
+      </div>
+      <div class="mobile-menu-links">
+        <a href="#january-2027-flyer" class="mobile-nav-link" style="color: var(--sky-600); font-weight: 700;">🚀 Jan 2027 Batch Flyer</a>
+        <a href="#career-salaries" class="mobile-nav-link">Career & Salaries</a>
+        <a href="#calculator" class="mobile-nav-link">ROI Calculator</a>
+        <a href="#courses" class="mobile-nav-link">Course Tracks</a>
+        <a href="#pedagogy" class="mobile-nav-link">Learning Pedagogy</a>
+        <a href="#projects" class="mobile-nav-link">Live Projects</a>
+        <a href="#testimonials" class="mobile-nav-link">Student Stories</a>
+        <a href="#faqs" class="mobile-nav-link">FAQs</a>
+        <a href="#contact" class="mobile-nav-link">Contact Admissions</a>
+      </div>
+    </div>
+    <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 0.75rem;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-3d" style="width: 100%;">
+        Confirm Batch Enrollment
+      </a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScu2wUqKz4HDeXM9sKUUvp8BlwebQ2eAm156qD3MqVPBlk1_w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-3d" style="width: 100%;">
+        Book Free Demo & Admissions
+      </a>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT AREA -->
+  <main id="main-content">
+    
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+      <!-- 3D Interactive Antigravity Canvas Scene -->
+      <canvas id="antigravity-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-bg-accent" aria-hidden="true"></div>
+      <div class="hero-bg-accent-left" aria-hidden="true"></div>
+      
+      <!-- 3D Background Geometric Graphics Collection -->
+      <!-- Shape 1: 3D Wireframe Rotating Polyhedron Cube (Top Center) -->
+      <div class="antigravity-cube-scene" style="top: 8%; right: 45%;" aria-hidden="true">
+        <div class="cube-3d-mesh">
+          <div class="face front">IT</div>
+          <div class="face back">AI</div>
+          <div class="face right">GCP</div>
+          <div class="face left">OPS</div>
+          <div class="face top">SQL</div>
+          <div class="face bottom">PY</div>
+        </div>
+      </div>
+
+      <!-- Shape 2: 3D Floating Glowing Octahedron Diamond (Top Left) -->
+      <div class="antigravity-octahedron-scene" style="top: 16%; left: 5%;" aria-hidden="true">
+        <div class="octahedron-3d-mesh">
+          <div class="octa-face f1"></div>
+          <div class="octa-face f2"></div>
+          <div class="octa-face f3"></div>
+          <div class="octa-face f4"></div>
+          <div class="octa-face f5"></div>
+          <div class="octa-face f6"></div>
+          <div class="octa-face f7"></div>
+          <div class="octa-face f8"></div>
+        </div>
+      </div>
+
+      <!-- Shape 3: 3D Floating Multi-Axis Gyroscope Rings (Mid Right) -->
+      <div class="antigravity-gyroscope-scene" style="top: 24%; right: 3%;" aria-hidden="true">
+        <div class="gyroscope-3d-mesh">
+          <div class="gyro-ring ring-x"></div>
+          <div class="gyro-ring ring-y"></div>
+          <div class="gyro-ring ring-z"></div>
+          <div class="gyro-core"></div>
+        </div>
+      </div>
+
+      <!-- Shape 4: 3D Floating Wireframe Tetrahedron Pyramid (Bottom Left) -->
+      <div class="antigravity-pyramid-scene" style="bottom: 12%; left: 7%;" aria-hidden="true">
+        <div class="pyramid-3d-mesh">
+          <div class="pyr-face p1"></div>
+          <div class="pyr-face p2"></div>
+          <div class="pyr-face p3"></div>
+          <div class="pyr-face p4"></div>
+        </div>
+      </div>
+
+      <!-- Shape 5: 3D Floating Hexagonal Prism Shard (Bottom Center) -->
+      <div class="antigravity-prism-scene" style="bottom: 6%; right: 40%;" aria-hidden="true">
+        <div class="prism-3d-mesh">
+          <div class="prism-face pf1"></div>
+          <div class="prism-face pf2"></div>
+          <div class="prism-face pf3"></div>
+          <div class="prism-face pf4"></div>
+          <div class="prism-face pf5"></div>
+          <div class="prism-face pf6"></div>
+        </div>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-eyebrow tech-pill-3d">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Admissions Open • Flagship Batch Starts January 2027</span>
+            </div>
+            
+            <h1 id="hero-heading" class="hero-title">
+              Launch Your High-Growth IT Career From <span class="highlight">Foundation to GenAI</span>
+            </h1>
+            
+            <p class="hero-desc">
+              Master in-demand skills in <strong>Linux, SQL, Python, Data Engineering, DevOps, GCP, Machine Learning</strong>, and cutting-edge <strong>Agentic Generative AI</strong>. Built with 70% practical labs, real-world portfolio capstones, and dedicated 1:1 mentorship.
+            </p>
+            
+            <div class="hero-cta-group">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg btn-glow btn-3d">
+                Confirm Batch Enrollment (Jan 2027)
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScu2wUqKz4HDeXM9sKUUvp8BlwebQ2eAm156qD3MqVPBlk1_w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg btn-3d">
+                Book Free Demo Class
+              </a>
+              <a href="#courses" class="btn btn-secondary btn-lg btn-3d">
+                Explore Tracks
+              </a>
+            </div>
+
+            <!-- Key Hero Trust Metrics -->
+            <div class="hero-stats-row">
+              <div class="hero-stat-card">
+                <div class="stat-number" data-target="30" data-prefix="₹" data-suffix=" LPA">₹30 LPA</div>
+                <div class="stat-label">Peak Indicative Package</div>
+              </div>
+              <div class="hero-stat-card">
+                <div class="stat-number" data-target="15" data-suffix="+">15+</div>
+                <div class="stat-label">Hands-on Capstones</div>
+              </div>
+              <div class="hero-stat-card">
+                <div class="stat-number" data-target="94.6" data-suffix="%">94.6%</div>
+                <div class="stat-label">Practical Placement Support</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual Frame with 3D Orbit System & Floating Glass Cards -->
+          <div class="hero-visual-wrapper">
+            <!-- 3D Concentric Orbit System with Revolving Beacons -->
+            <div class="orbit-3d-system" aria-hidden="true">
+              <div class="orbit-3d-ring orbit-ring-1"><div class="orbit-beacon"></div></div>
+              <div class="orbit-3d-ring orbit-ring-2"><div class="orbit-beacon" style="left: 15%;"></div></div>
+              <div class="orbit-3d-ring orbit-ring-3"><div class="orbit-beacon" style="left: 85%;"></div></div>
+            </div>
+
+            <figure class="hero-image-frame tilt-card-3d" style="position: relative; z-index: 2;">
+              <img 
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=90" 
+                alt="High definition photograph of tech professionals collaborating on code and cloud architecture in modern PulsoGen lab" 
+                width="600" 
+                height="480" 
+                loading="eager"
+              >
+            </figure>
+
+            <!-- Floating Pill 1: Top Track Highlight with Antigravity Levitation -->
+            <div class="hero-floating-card card-top-left antigravity-levitate glass-card-3d">
+              <div class="floating-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              </div>
+              <div class="floating-text">
+                <div class="label">GenAI & Agentic AI</div>
+                <div class="value">₹12–30 LPA Career Path</div>
+              </div>
+            </div>
+
+            <!-- Floating Pill 2: Hands-On Cloud Sandbox with Antigravity Levitation -->
+            <div class="hero-floating-card card-bottom-right antigravity-levitate-alt glass-card-3d">
+              <div class="floating-icon" style="background: var(--sky-100); color: var(--sky-600);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+              </div>
+              <div class="floating-text">
+                <div class="label">Practical Infrastructure</div>
+                <div class="value">GCP & Linux Sandboxes</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: JANUARY 2027 COHORT 3D FLYER -->
+    <section id="january-2027-flyer" class="flyer-2027-section" aria-labelledby="flyer-heading">
+      <!-- 3D Background Floating Diamond Octahedron -->
+      <div class="antigravity-octahedron-scene" style="top: 8%; right: 5%;" aria-hidden="true">
+        <div class="octahedron-3d-mesh">
+          <div class="octa-face f1"></div>
+          <div class="octa-face f2"></div>
+          <div class="octa-face f3"></div>
+          <div class="octa-face f4"></div>
+          <div class="octa-face f5"></div>
+          <div class="octa-face f6"></div>
+          <div class="octa-face f7"></div>
+          <div class="octa-face f8"></div>
+        </div>
+      </div>
+      <!-- 3D Background Floating Wireframe Cube -->
+      <div class="antigravity-cube-scene" style="bottom: 10%; left: 4%; transform: scale(0.85);" aria-hidden="true">
+        <div class="cube-3d-mesh">
+          <div class="face front">2027</div>
+          <div class="face back">BATCH</div>
+          <div class="face right">AI</div>
+          <div class="face left">IT</div>
+          <div class="face top">GCP</div>
+          <div class="face bottom">OPS</div>
+        </div>
+      </div>
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="flyer-3d-card tilt-card-3d">
+          <div class="flyer-grid">
+            
+            <div>
+              <div class="flyer-header-badge">
+                <span>🗓️ OFFICIAL ADMISSIONS FLYER • STARTING JANUARY 2027</span>
+              </div>
+              <h2 id="flyer-heading" class="flyer-title">
+                New IT Coaching Cohort <br><span class="text-sky">Starting January 2027</span>
+              </h2>
+              <p style="font-size: 1.05rem; color: var(--slate-600); line-height: 1.6; margin-bottom: 1.25rem;">
+                Kickstart your high-paying tech career in the new year. Comprehensive hands-on coaching in Linux, SQL, Python, Data Engineering, DevOps, and state-of-the-art Generative AI with Google Cloud Platform.
+              </p>
+
+              <!-- Batch Timings Options -->
+              <div class="batch-timings-grid">
+                <div class="batch-timing-card">
+                  <strong>🌅 Weekday Morning</strong>
+                  <span>08:00 AM – 10:00 AM IST (Mon–Fri)</span>
+                </div>
+                <div class="batch-timing-card">
+                  <strong>🌆 Weekday Evening</strong>
+                  <span>07:30 PM – 09:30 PM IST (Mon–Fri)</span>
+                </div>
+                <div class="batch-timing-card">
+                  <strong>⚡ Weekend Intensive</strong>
+                  <span>10:00 AM – 02:00 PM IST (Sat–Sun)</span>
+                </div>
+              </div>
+
+              <!-- Early Bird Perks -->
+              <div class="flyer-perks-list">
+                <div class="flyer-perk-item">
+                  <span class="flyer-perk-check">✓</span>
+                  <span>100% Live GCP Cloud Sandboxes & Dedicated Linux Nodes from Day 1</span>
+                </div>
+                <div class="flyer-perk-item">
+                  <span class="flyer-perk-check">✓</span>
+                  <span>1-on-1 Code Reviews & Technical Mock Interviews with Tier-1 Tech Leads</span>
+                </div>
+                <div class="flyer-perk-item">
+                  <span class="flyer-perk-check">✓</span>
+                  <span>Strictly Capped at 25 Learners per Batch for Personalized Mentorship</span>
+                </div>
+                <div class="flyer-perk-item">
+                  <span class="flyer-perk-check">✓</span>
+                  <span>Early Bird Benefit: Complimentary Pre-Cohort Python & SQL Foundation Bootcamp</span>
+                </div>
+              </div>
+
+              <!-- Direct Google Forms Action Buttons -->
+              <div class="flyer-cta-group">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn btn-primary btn-lg btn-glow btn-3d">
+                  Confirm Batch Enrollment (Jan 2027) ➔
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScu2wUqKz4HDeXM9sKUUvp8BlwebQ2eAm156qD3MqVPBlk1_w/viewform?usp=dialog" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn btn-secondary btn-lg btn-3d">
+                  Book Free Demo & Admissions ➔
+                </a>
+              </div>
+            </div>
+
+            <!-- Flyer 3D Visual Box -->
+            <div class="flyer-visual-box tilt-card-3d" data-3d-depth="25">
+              <div class="flyer-calendar-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span>LIMITED SEATS • JAN 2027 INTAKE</span>
+              </div>
+
+              <div class="flyer-countdown-metric">
+                <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.85;">Flagship Cohort</div>
+                <div class="big-date">JANUARY 2027</div>
+                <div class="cohort-tag">All 3 Tracks Open: Foundation • Intermediate • Advanced AI</div>
+              </div>
+
+              <div style="background: rgba(255, 255, 255, 0.12); border-radius: var(--radius-md); padding: 1rem; border: 1px solid rgba(255, 255, 255, 0.2); margin: 1.5rem 0;">
+                <div style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.25rem;">⚡ Indicative Salary Potential:</div>
+                <div style="font-size: 1.25rem; font-weight: 850;">₹2.5 LPA – ₹30 LPA</div>
+                <div style="font-size: 0.75rem; opacity: 0.85; margin-top: 0.2rem;">Based on demonstrated practical projects & skills</div>
+              </div>
+
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn btn-white btn-3d" 
+                 style="width: 100%; font-weight: 800;">
+                Reserve Your Seat in January 2027 Cohort
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CAREER OPPORTUNITIES & SALARY POTENTIAL (Brochure Data) -->
+    <section id="career-salaries" class="section section-alt" aria-labelledby="salary-heading">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="dot" aria-hidden="true"></span>
+            Career Opportunities & Salary Potential
+          </div>
+          <h2 id="salary-heading" class="section-title">
+            Industry Salary Packages <span class="text-sky">After Training</span>
+          </h2>
+          <p class="section-subtitle">
+            Comprehensive salary and role benchmarks synthesized from the Indian IT job market. Explore entry-level fresher packages (0–1 yr) and accelerated growth for experienced practitioners (3–5 yrs).
+          </p>
+        </div>
+
+        <!-- 3 Category Overview Cards -->
+        <div class="salary-overview-grid">
+          
+          <!-- Category 1: Foundation -->
+          <article class="salary-summary-card">
+            <div class="card-category-title">1. Foundation Track</div>
+            <div class="card-tech-pills">
+              <span class="tech-tag">Linux</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Bash</span>
+            </div>
+            
+            <div class="salary-figures-box">
+              <div class="salary-row">
+                <span class="type">Fresher (0–1 Year)</span>
+                <span class="amount">₹2.5 – 6 LPA</span>
+              </div>
+              <div class="salary-row">
+                <span class="type">Experienced (3–5 Years)</span>
+                <span class="amount">₹5 – 15 LPA</span>
+              </div>
+            </div>
+
+            <p class="roles-brief">
+              <strong>Target Career Paths:</strong>
+              Linux Support Engineer, Technical Support Engineer, SQL Support Engineer, Junior Python Developer, Junior Data Analyst, Application Support Engineer.
+            </p>
+
+            <a href="#courses" class="btn btn-secondary btn-sm" style="margin-top: auto;">
+              View Foundation Syllabus
             </a>
-            <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
-                <a href="#hero">Home</a>
-                <a href="#flyer">Next Batch</a>
-                <a href="#courses">Courses & Paths</a>
-                <a href="#salaries">Salary Guide</a>
-                <a href="#about">About</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn-nav">Google Enquiry Form</a>
-            </nav>
-            <div class="nav-actions">
-                <button id="themeToggle" aria-label="Toggle Dark/Light Mode" class="theme-btn">
-                    <i class="fa-solid fa-moon"></i>
-                </button>
-                <button class="mobile-menu-btn" id="menuBtn" aria-expanded="false" aria-label="Toggle Navigation Menu">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+          </article>
+
+          <!-- Category 2: Intermediate (Featured) -->
+          <article class="salary-summary-card featured">
+            <div class="card-category-title">2. Foundation + Intermediate</div>
+            <div class="card-tech-pills">
+              <span class="tech-tag">Linux/SQL/Python</span>
+              <span class="tech-tag">Data Engineering</span>
+              <span class="tech-tag">DevOps</span>
+              <span class="tech-tag">Analytics</span>
             </div>
+            
+            <div class="salary-figures-box">
+              <div class="salary-row">
+                <span class="type">Fresher (0–1 Year)</span>
+                <span class="amount">₹3.5 – 10 LPA</span>
+              </div>
+              <div class="salary-row">
+                <span class="type">Experienced (3–5 Years)</span>
+                <span class="amount">₹7 – 25 LPA</span>
+              </div>
+            </div>
+
+            <p class="roles-brief">
+              <strong>Target Career Paths:</strong>
+              Data Analyst, BI Analyst, Junior Data Engineer, Junior DevOps Engineer, Python Automation Engineer, ETL Developer, Generative AI App Developer, AI Agent Developer.
+            </p>
+
+            <a href="#courses" class="btn btn-primary btn-sm btn-glow" style="margin-top: auto;">
+              View Intermediate Syllabus
+            </a>
+          </article>
+
+          <!-- Category 3: Advanced -->
+          <article class="salary-summary-card">
+            <div class="card-category-title">3. Advanced AI & Cloud</div>
+            <div class="card-tech-pills">
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">Deep Learning</span>
+              <span class="tech-tag">GenAI & Agentic AI</span>
+              <span class="tech-tag">GCP</span>
+            </div>
+            
+            <div class="salary-figures-box">
+              <div class="salary-row">
+                <span class="type">Fresher (0–1 Year)</span>
+                <span class="amount">₹5 – 12 LPA</span>
+              </div>
+              <div class="salary-row">
+                <span class="type">Experienced (3–5 Years)</span>
+                <span class="amount">₹12 – 30 LPA</span>
+              </div>
+            </div>
+
+            <p class="roles-brief">
+              <strong>Target Career Paths:</strong>
+              Machine Learning Engineer, Junior Data Scientist, Deep Learning Engineer, NLP Engineer, Computer Vision Engineer, Generative AI Engineer, LLM App Developer, AI Agent Developer, MLOps Engineer.
+            </p>
+
+            <a href="#courses" class="btn btn-secondary btn-sm" style="margin-top: auto;">
+              View Advanced Syllabus
+            </a>
+          </article>
+
         </div>
-    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero">
-            <div class="hero-container">
-                <div class="hero-content animate-fade-in">
-                    <span class="badge"><i class="fa-solid fa-bolt"></i> Future-Proof Your Tech Career</span>
-                    <h1>Build High-Paying Skills in <span>Data, Cloud & GenAI</span></h1>
-                    <p>Industry-focused training programs ranging from foundational Linux and Python to advanced Generative AI, Agentic AI, and Cloud Architecture based in Hyderabad.</p>
-                    <div class="hero-btns">
-                        <a href="#courses" class="btn btn-primary">Explore Courses <i class="fa-solid fa-arrow-right"></i></a>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Google Enquiry Form <i class="fa-solid fa-external-link-alt"></i></a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <h3>₹2.5 - ₹30 LPA</h3>
-                            <p>Indicative Salary Range</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>100%</h3>
-                            <p>Practical & Project-Based</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>3 Tiers</h3>
-                            <p>From Beginner to Advanced</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-card animate-slide-up">
-                    <div class="floating-card-header">
-                        <i class="fa-solid fa-microchip"></i>
-                        <span>Top Career Track</span>
-                    </div>
-                    <h3>GenAI & Agentic AI Engineer</h3>
-                    <p class="card-salary">Freshers: ₹5–12 LPA | Exp: ₹12–30 LPA</p>
-                    <ul class="card-list">
-                        <li><i class="fa-solid fa-check"></i> Python & Advanced APIs</li>
-                        <li><i class="fa-solid fa-check"></i> LangChain, LLMs & Fine-tuning</li>
-                        <li><i class="fa-solid fa-check"></i> AI Agent Development & MLOps</li>
-                    </ul>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">Secure Your Spot via Google Form</a>
-                </div>
-            </div>
-        </section>
+        <!-- Interactive Search & Filter Controls for Detailed Roles Table -->
+        <div class="table-controls-bar">
+          <div class="search-input-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="roleSearchInput" placeholder="Filter by job role or tech skill (e.g. DevOps, Python, AI)..." aria-label="Search job role or technology">
+          </div>
 
-        <!-- Animated Batch Announcement Flyer Section -->
-        <section id="flyer" class="flyer-section">
-            <div class="container">
-                <div class="animated-flyer-card animate-pulse-glow">
-                    <div class="flyer-badge">🚀 Admissions Open</div>
-                    <h2>Next Batch Starts From <span>January 2027</span></h2>
-                    <p>Secure your slot early for our upcoming cohort. Limited seats available for Foundation, Intermediate, and Advanced AI Tracks in Hyderabad!</p>
-                    <div class="flyer-countdown">
-                        <div class="countdown-box">
-                            <span id="daysCount">--</span>
-                            <small>Days</small>
-                        </div>
-                        <div class="countdown-box">
-                            <span id="hoursCount">--</span>
-                            <small>Hours</small>
-                        </div>
-                        <div class="countdown-box">
-                            <span id="minsCount">--</span>
-                            <small>Mins</small>
-                        </div>
-                        <div class="countdown-box">
-                            <span id="secsCount">--</span>
-                            <small>Secs</small>
-                        </div>
-                    </div>
-                    <div class="flyer-action">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-light-glow">
-                            <i class="fa-solid fa-file-lines"></i> Register via Google Form Now
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <div class="tab-buttons-wrap" role="tablist" aria-label="Filter roles by course track">
+            <button type="button" class="track-filter-btn active" data-track="all" role="tab" aria-selected="true">All Tracks</button>
+            <button type="button" class="track-filter-btn" data-track="foundation" role="tab" aria-selected="false">Foundation</button>
+            <button type="button" class="track-filter-btn" data-track="intermediate" role="tab" aria-selected="false">Intermediate</button>
+            <button type="button" class="track-filter-btn" data-track="advanced" role="tab" aria-selected="false">Advanced AI & Cloud</button>
+          </div>
 
-        <!-- Courses & Career Paths Section -->
-        <section id="courses" class="courses">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Our Comprehensive Training Tiers</h2>
-                    <p>Designed for fresh graduates, career switchers, and working professionals aiming for high-growth technical roles.</p>
-                </div>
-
-                <div class="course-grid">
-                    <!-- Tier 1 -->
-                    <div class="course-card">
-                        <div class="course-header">
-                            <span class="tier-tag">Tier 1</span>
-                            <h3>Foundation Courses</h3>
-                            <p class="course-tech">Linux, SQL & Python</p>
-                        </div>
-                        <div class="course-body">
-                            <div class="salary-pill">
-                                <span>Fresher: ₹2.5–6 LPA</span>
-                                <span>Experienced: ₹5–15 LPA</span>
-                            </div>
-                            <p class="target-audience"><strong>Suitable for:</strong> Fresh graduates, beginners, and career switchers building their technical foundation.</p>
-                            <h4>Key Job Roles:</h4>
-                            <ul class="role-list">
-                                <li><i class="fa-solid fa-angle-right"></i> Linux Support Engineer</li>
-                                <li><i class="fa-solid fa-angle-right"></i> Technical Support Engineer</li>
-                                <li><i class="fa-solid fa-angle-right"></i> SQL / Database Support Engineer</li>
-                                <li><i class="fa-solid fa-angle-right"></i> Junior Python Developer</li>
-                                <li><i class="fa-solid fa-angle-right"></i> Junior Data Analyst</li>
-                            </ul>
-                        </div>
-                        <div class="course-footer">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Enquire via Form</a>
-                        </div>
-                    </div>
-
-                    <!-- Tier 2 -->
-                    <div class="course-card popular">
-                        <div class="popular-badge">Most Popular</div>
-                        <div class="course-header">
-                            <span class="tier-tag">Tier 2</span>
-                            <h3>Foundation + Intermediate</h3>
-                            <p class="course-tech">Data Engineering, DevOps, Analytics</p>
-                        </div>
-                        <div class="course-body">
-                            <div class="salary-pill">
-                                <span>Fresher: ₹3.5–10 LPA</span>
-                                <span>Experienced: ₹7–25 LPA</span>
-                            </div>
-                            <p class="target-audience"><strong>Suitable for:</strong> Graduates with programming fundamentals and professionals seeking specialization.</p>
-                            <h4>Key Job Roles:</h4>
-                            <ul class="role-list">
-                                <li><i class="fa-solid fa-angle-right"></i> Data Analyst & BI Analyst</li>
-                                <li><i class="fa-solid fa-angle-right"></i> Junior Data Engineer</li>
-                                <li><i class="fa-solid fa-angle-right"></i> Junior DevOps Engineer</li>
-                                <li><i class="fa-solid fa-angle-right"></i> ETL & Python Automation Developer</li>
-                                <li><i class="fa-solid fa-angle-right"></i> GenAI Application Developer</li>
-                            </ul>
-                        </div>
-                        <div class="course-footer">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Enquire via Form</a>
-                        </div>
-                    </div>
-
-                    <!-- Tier 3 -->
-                    <div class="course-card">
-                        <div class="course-header">
-                            <span class="tier-tag">Tier 3</span>
-                            <h3>Advanced Specialization</h3>
-                            <p class="course-tech">ML, Deep Learning, GenAI & GCP</p>
-                        </div>
-                        <div class="course-body">
-                            <div class="salary-pill">
-                                <span>Fresher: ₹5–12 LPA</span>
-                                <span>Experienced: ₹12–30 LPA</span>
-                            </div>
-                            <p class="target-audience"><strong>Suitable for:</strong> Engineers aiming for cutting-edge AI, machine learning, and cloud engineering positions.</p>
-                            <h4>Key Job Roles:</h4>
-                            <ul class="role-list">
-                                <li><i class="fa-solid fa-angle-right"></i> Machine Learning Engineer</li>
-                                <li><i class="fa-solid fa-angle-right"></i> Junior Data Scientist</li>
-                                <li><i class="fa-solid fa-angle-right"></i> NLP & Computer Vision Engineer</li>
-                                <li><i class="fa-solid fa-angle-right"></i> Generative AI & LLM Engineer</li>
-                                <li><i class="fa-solid fa-angle-right"></i> MLOps & AI Agent Developer</li>
-                            </ul>
-                        </div>
-                        <div class="course-footer">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Enquire via Form</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Salary Guide Section -->
-        <section id="salaries" class="salaries">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Career Opportunities & Salary Potential</h2>
-                    <p>Approximate annual CTC ranges in the Indian IT job market based on practical skills and role.</p>
-                </div>
-
-                <div class="table-container">
-                    <table class="salary-table">
-                        <thead>
-                            <tr>
-                                <th>Course Category</th>
-                                <th>Typical Fresher Package (0–1 Year)</th>
-                                <th>Experienced Package (3–5 Years)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Foundation</strong> <br><small>Linux, SQL, Python</small></td>
-                                <td><span class="salary-badge">₹2.5 – 6 LPA</span></td>
-                                <td><span class="salary-badge high">₹5 – 15 LPA</span></td>
-                            </tr>
-                            <tr>
-                                <td><strong>Foundation + Intermediate</strong> <br><small>Data Engineering, DevOps, Analytics</small></td>
-                                <td><span class="salary-badge">₹3.5 – 10 LPA</span></td>
-                                <td><span class="salary-badge high">₹7 – 25 LPA</span></td>
-                            </tr>
-                            <tr>
-                                <td><strong>Advanced</strong> <br><small>ML, Deep Learning, GenAI & GCP</small></td>
-                                <td><span class="salary-badge">₹5 – 12 LPA</span></td>
-                                <td><span class="salary-badge high">₹12 – 30 LPA</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p class="disclaimer">*Note: Salary packages are illustrative market estimates for the Indian IT job market. Actual compensation depends on practical skills, projects, certifications, employer, location, and interview performance.</p>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about">
-            <div class="container about-grid">
-                <div class="about-text">
-                    <h2>Why Learn With PulsoGen?</h2>
-                    <p>We bridge the gap between traditional education and high-demand industry requirements. Our curriculum is built around real-world projects, API integrations, cloud deployments, and rigorous coding practice.</p>
-                    <div class="features-list">
-                        <div class="feature-box">
-                            <i class="fa-solid fa-code"></i>
-                            <div>
-                                <h4>Hands-on Project Training</h4>
-                                <p>Build real applications, data pipelines, and AI models for your professional portfolio.</p>
-                            </div>
-                        </div>
-                        <div class="feature-box">
-                            <i class="fa-solid fa-chalkboard-user"></i>
-                            <div>
-                                <h4>Industry Expert Mentors</h4>
-                                <p>Learn directly through software architectural insights, data methodologies, and cloud engineering standards.</p>
-                            </div>
-                        </div>
-                        <div class="feature-box">
-                            <i class="fa-solid fa-rocket"></i>
-                            <div>
-                                <h4>Career & Interview Prep</h4>
-                                <p>Mock interviews, resume refinement, and targeted interview preparation guidance.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-card-box">
-                    <div class="stat-box-large">
-                        <h3>30+</h3>
-                        <p>High-Demand Job Roles Mapped</p>
-                    </div>
-                    <div class="stat-box-large">
-                        <h3>100%</h3>
-                        <p>Practical & Skill-Oriented Curriculum</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact & Google Form Embed CTA Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Start Your Journey Today</h2>
-                    <p>Register directly via our official Google Form or connect with our admissions desk below.</p>
-                </div>
-                <div class="contact-wrapper">
-                    <div class="google-form-cta">
-                        <div class="cta-banner-card">
-                            <i class="fa-solid fa-clipboard-question cta-icon"></i>
-                            <h3>Official Admissions Enquiry Form</h3>
-                            <p>Fill out our quick intake form hosted securely on Google Forms to secure your batch placement for January 2027.</p>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
-                                <i class="fa-solid fa-external-link-alt"></i> Open Google Form Enquiry
-                            </a>
-                        </div>
-                    </div>
-                    <div class="contact-info">
-                        <h3>Get in Touch</h3>
-                        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:admissions@pulsogen.edu">admissions@pulsogen.edu</a></p>
-                        <p><i class="fa-solid fa-phone"></i> <a href="tel:+919503800703">+91 (950) 380-0703</a></p>
-                        <p><i class="fa-solid fa-location-dot"></i> Hi-Tech City, Hyderabad, India</p>
-                        <div class="social-links" aria-label="Social Media Links">
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="https://github.com/d-codeai" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>&copy; <span id="currentYear">2026</span> PulsoGen IT Academy. All rights reserved.</p>
-            <p class="disclaimer-text">Disclaimer: Salary figures are approximate market estimates and course completion does not guarantee specific placement or compensation.</p>
+          <div id="currentTotalRoles" style="font-size: 0.82rem; font-weight: 700; color: var(--sky-800);">
+            23 Roles Listed
+          </div>
         </div>
-    </footer>
 
-    <!-- JavaScript File -->
-    <script src="./script.js"></script>
+        <!-- Detailed Interactive Salary Comparison Table -->
+        <div class="salary-table-card">
+          <div class="table-responsive">
+            <table class="salary-table" aria-label="Salary packages and career roles comparison table">
+              <thead>
+                <tr>
+                  <th scope="col">Job Role & Skill Focus</th>
+                  <th scope="col">Course Track</th>
+                  <th scope="col">Fresher (0–1 Year)</th>
+                  <th scope="col">Experienced (3–5 Years)</th>
+                  <th scope="col">Projected Growth Horizon</th>
+                </tr>
+              </thead>
+              <tbody id="roleTableBody">
+                <!-- Dynamically populated by js/main.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Official Ethical Salary & Job Market Disclaimer -->
+        <div class="disclaimer-box" role="note">
+          <div class="disclaimer-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          </div>
+          <div class="disclaimer-text">
+            <strong>Important Note on Salary & Compensation:</strong>
+            Salary packages are indicative estimates for the Indian IT job market, synthesized from salary guides covering IT support, data engineering, DevOps, and Generative AI roles. Actual compensation depends on practical skills, projects, certifications, employer, location, and individual interview performance. Training completion does not guarantee a specific salary or placement. AI application roles generally require practical Python skills, API integration, relevant frameworks, and demonstrable projects.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CTC & CAREER ROI CALCULATOR -->
+    <section id="calculator" class="section" aria-labelledby="calc-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="dot" aria-hidden="true"></span>
+            Personalized Career Planner
+          </div>
+          <h2 id="calc-heading" class="section-title">
+            Interactive Career & <span class="text-sky">CTC Calculator</span>
+          </h2>
+          <p class="section-subtitle">
+            Estimate your projected package range, preparation timeline, and portfolio requirements based on your current background and target career specialization.
+          </p>
+        </div>
+
+        <div class="calc-card">
+          <!-- Inputs Column -->
+          <div class="calc-inputs">
+            
+            <div class="calc-group">
+              <label class="calc-label">1. Select Your Current Background</label>
+              <div class="calc-options-grid">
+                <label class="calc-radio-label checked">
+                  <input type="radio" name="calcExp" value="fresher" checked>
+                  <span class="opt-title">College Fresher</span>
+                  <span class="opt-subtitle">0-1 Year Exp</span>
+                </label>
+                <label class="calc-radio-label">
+                  <input type="radio" name="calcExp" value="switcher">
+                  <span class="opt-title">Career Switcher</span>
+                  <span class="opt-subtitle">Non-IT Background</span>
+                </label>
+                <label class="calc-radio-label">
+                  <input type="radio" name="calcExp" value="support">
+                  <span class="opt-title">Junior IT Support</span>
+                  <span class="opt-subtitle">1-2 Years Exp</span>
+                </label>
+                <label class="calc-radio-label">
+                  <input type="radio" name="calcExp" value="developer">
+                  <span class="opt-title">Mid-Level Tech Pro</span>
+                  <span class="opt-subtitle">3+ Years Exp</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="calc-group">
+              <label class="calc-label">2. Select Your Target Program Track</label>
+              <div class="calc-options-grid">
+                <label class="calc-radio-label">
+                  <input type="radio" name="calcTrack" value="foundation">
+                  <span class="opt-title">Foundation</span>
+                  <span class="opt-subtitle">Linux, SQL, Python</span>
+                </label>
+                <label class="calc-radio-label checked">
+                  <input type="radio" name="calcTrack" value="intermediate" checked>
+                  <span class="opt-title">Intermediate</span>
+                  <span class="opt-subtitle">Data Eng & DevOps</span>
+                </label>
+                <label class="calc-radio-label">
+                  <input type="radio" name="calcTrack" value="advanced">
+                  <span class="opt-title">Advanced Track</span>
+                  <span class="opt-subtitle">ML, GenAI & GCP</span>
+                </label>
+              </div>
+            </div>
+
+            <div style="font-size: 0.85rem; color: var(--slate-500); line-height: 1.5;">
+              💡 <em>Our counsellors recommend choosing a track aligned with your programming fundamentals and long-term career vision.</em>
+            </div>
+          </div>
+
+          <!-- Live Results Column -->
+          <div class="calc-results">
+            <div>
+              <div class="results-header">
+                <span class="results-badge">Personalized Projection</span>
+                <h3 id="calcTrackPill" style="font-size: 1.15rem; font-weight: 800; color: var(--slate-900); margin-top: 0.35rem;">
+                  Foundation + Intermediate Specialization
+                </h3>
+              </div>
+
+              <div class="projected-ctc-display">
+                <div class="label">Estimated Starting CTC Range:</div>
+                <div class="ctc-val" id="calcStartingCtc">₹3.5 – 10.0 LPA</div>
+                <div class="growth-hint" id="calcGrowthCtc">⚡ Projected: ₹7.0 – 25.0 LPA in 3-5 Years</div>
+              </div>
+
+              <div class="calc-highlights-list">
+                <div class="calc-highlight-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>Duration: <strong id="calcDuration">16 Weeks (Hands-on Labs)</strong></span>
+                </div>
+                <div class="calc-highlight-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                  <span>Portfolio Output: <strong id="calcProjectsCount">6 Production Cloud Pipelines</strong></span>
+                </div>
+                <div class="calc-highlight-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  <span>Support: <strong>1:1 Technical Mentoring & Resume Reviews</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary btn-glow" style="width: 100%;">
+              Book Free Counselling Session
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: COURSE ARCHITECTURE & DEEP-DIVE TRACKS -->
+    <section id="courses" class="section section-alt" aria-labelledby="courses-heading" style="position: relative; overflow: hidden;">
+      <!-- 3D Background Floating Gyroscope Rings -->
+      <div class="antigravity-gyroscope-scene" style="top: 5%; right: 4%;" aria-hidden="true">
+        <div class="gyroscope-3d-mesh">
+          <div class="gyro-ring ring-x"></div>
+          <div class="gyro-ring ring-y"></div>
+          <div class="gyro-ring ring-z"></div>
+          <div class="gyro-core"></div>
+        </div>
+      </div>
+      <!-- 3D Background Floating Hexagonal Prism -->
+      <div class="antigravity-prism-scene" style="bottom: 10%; left: 3%;" aria-hidden="true">
+        <div class="prism-3d-mesh">
+          <div class="prism-face pf1"></div>
+          <div class="prism-face pf2"></div>
+          <div class="prism-face pf3"></div>
+          <div class="prism-face pf4"></div>
+          <div class="prism-face pf5"></div>
+          <div class="prism-face pf6"></div>
+        </div>
+      </div>
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="dot" aria-hidden="true"></span>
+            Curriculum Architecture
+          </div>
+          <h2 id="courses-heading" class="section-title">
+            Industry-Aligned <span class="text-sky">Course Programs</span>
+          </h2>
+          <p class="section-subtitle">
+            Each program is crafted with practical labs, architecture walkthroughs, industry capstone projects, and GitHub portfolio development.
+          </p>
+        </div>
+
+        <div class="courses-grid">
+          
+          <!-- Track 1: Foundation -->
+          <article class="course-card tilt-card-3d glass-card-3d">
+            <div class="course-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=90" 
+                alt="Ultra-sharp high definition photograph of developer coding in Python and configuring Linux commands in clean modern setup" 
+                width="400" 
+                height="200" 
+                loading="lazy"
+              >
+              <div class="course-tier-badge tech-pill-3d">Track 1 • Beginner Friendly</div>
+            </div>
+
+            <div class="course-body">
+              <h3 class="course-title" data-3d-depth="15">Foundation IT Track: Linux, SQL & Python</h3>
+              
+              <div class="course-meta-pills" data-3d-depth="10">
+                <span>⏱ 10 Weeks</span>
+                <span>•</span>
+                <span>💻 60+ Live Lab Hours</span>
+                <span>•</span>
+                <span>🏆 4 Capstones</span>
+              </div>
+
+              <p class="course-description">
+                Build rock-solid technical fundamentals. Master Linux system administration, database querying with PostgreSQL & MySQL, and scripting automation with Python.
+              </p>
+
+              <div class="course-modules-title">Core Modules Covered:</div>
+              <div class="modules-list">
+                <div class="module-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Linux CLI, Bash Shell Scripting & File Systems</span>
+                </div>
+                <div class="module-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Relational Databases, Advanced SQL Queries & Joins</span>
+                </div>
+                <div class="module-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Core & Object-Oriented Python, APIs & Automation</span>
+                </div>
+                <div class="module-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>System Diagnostics & Log Monitoring Basics</span>
+                </div>
+              </div>
+
+              <div class="course-card-footer" data-3d-depth="20">
+                <div>
+                  <div style="font-size: 0.72rem; color: var(--slate-500); font-weight: 600;">CTC Potential:</div>
+                  <div style="font-size: 0.95rem; font-weight: 800; color: var(--sky-700);">₹2.5L – ₹15L LPA</div>
+                </div>
+                <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm btn-3d">
+                    Confirm Enrollment
+                  </a>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScu2wUqKz4HDeXM9sKUUvp8BlwebQ2eAm156qD3MqVPBlk1_w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                    Book Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Track 2: Foundation + Intermediate -->
+          <article class="course-card tilt-card-3d glass-card-3d" style="border-color: var(--sky-400);">
+            <div class="course-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=90" 
+                alt="Ultra-sharp high definition photograph of data engineering pipeline dashboards and DevOps cloud infrastructure monitor" 
+                width="400" 
+                height="200" 
+                loading="lazy"
+              >
+              <div class="course-tier-badge" style="background: var(--sky-500); color: var(--white); box-shadow: 0 4px 12px rgba(14, 165, 233, 0.4);">Track 2 • Most Popular</div>
+            </div>
+
+            <div class="course-body">
+              <h3 class="course-title" data-3d-depth="15">Foundation + Intermediate: Data Eng & DevOps</h3>
+              
+              <div class="course-meta-pills" data-3d-depth="10">
+                <span>⏱ 16 Weeks</span>
+                <span>•</span>
+                <span>💻 110+ Live Lab Hours</span>
+                <span>•</span>
+                <span>🏆 6 Capstones</span>
+              </div>
+
+              <p class="course-description">
+                Bridge the gap between software development and scalable cloud systems. Master large-scale data transformation with Spark, containerization, and modern GenAI API integration.
+              </p>
+
+              <div class="course-modules-title">Core Modules Covered:</div>
+              <div class="modules-list">
+                <div class="module-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Data Warehousing, ETL Pipelines with Spark & Airflow</span>
+                </div>
+                <div class="module-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Docker Containers, Kubernetes Pods & Clusters</span>
+                </div>
+                <div class="module-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>CI/CD Automation with Git, GitHub Actions & Jenkins</span>
+                </div>
+                <div class="module-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Intro to Generative AI APIs & AI Agent Tool-Calling</span>
+                </div>
+              </div>
+
+              <div class="course-card-footer" data-3d-depth="20">
+                <div>
+                  <div style="font-size: 0.72rem; color: var(--slate-500); font-weight: 600;">CTC Potential:</div>
+                  <div style="font-size: 0.95rem; font-weight: 800; color: var(--sky-700);">₹3.5L – ₹25L LPA</div>
+                </div>
+                <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm btn-3d btn-glow">
+                    Confirm Enrollment
+                  </a>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScu2wUqKz4HDeXM9sKUUvp8BlwebQ2eAm156qD3MqVPBlk1_w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                    Book Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Track 3: Advanced ML, GenAI & GCP -->
+          <article class="course-card tilt-card-3d glass-card-3d">
+            <div class="course-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=90" 
+                alt="Ultra-sharp high definition photograph of artificial intelligence neural networks, machine learning algorithms and GenAI data nodes" 
+                width="400" 
+                height="200" 
+                loading="lazy"
+              >
+              <div class="course-tier-badge tech-pill-3d">Track 3 • Advanced Masterclass</div>
+            </div>
+
+            <div class="course-body">
+              <h3 class="course-title" data-3d-depth="15">Advanced AI Track: ML, GenAI, Agentic AI & GCP</h3>
+              
+              <div class="course-meta-pills">
+                <span>⏱ 20 Weeks</span>
+                <span>•</span>
+                <span>💻 150+ Live Lab Hours</span>
+                <span>•</span>
+                <span>🏆 8 Capstones</span>
+              </div>
+
+              <p class="course-description">
+                Stand at the frontier of technology. Build production-grade LLM applications, autonomous multi-agent systems, and deploy scalable machine learning architectures on Google Cloud Platform.
+              </p>
+
+              <div class="course-modules-title">Core Modules Covered:</div>
+              <div class="modules-list">
+                <div class="module-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Machine Learning, Deep Learning (PyTorch) & NLP</span>
+                </div>
+                <div class="module-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Generative AI, Advanced RAG, Vector DBs & Fine-Tuning</span>
+                </div>
+                <div class="module-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Agentic AI Frameworks (CrewAI, LangGraph, Tool Use)</span>
+                </div>
+                <div class="module-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Google Cloud Platform: Vertex AI, BigQuery & MLOps</span>
+                </div>
+              </div>
+
+              <div class="course-card-footer" data-3d-depth="20">
+                <div>
+                  <div style="font-size: 0.72rem; color: var(--slate-500); font-weight: 600;">CTC Potential:</div>
+                  <div style="font-size: 0.95rem; font-weight: 800; color: var(--sky-700);">₹5.0L – ₹30L LPA</div>
+                </div>
+                <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm btn-3d btn-glow">
+                    Confirm Enrollment
+                  </a>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScu2wUqKz4HDeXM9sKUUvp8BlwebQ2eAm156qD3MqVPBlk1_w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                    Book Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PEDAGOGY & WHY PULSOGEN STANDS OUT -->
+    <section id="pedagogy" class="section" aria-labelledby="pedagogy-heading">
+      <div class="container">
+        <div class="pedagogy-grid">
+          
+          <div class="pedagogy-features">
+            <div class="section-badge">
+              <span class="dot" aria-hidden="true"></span>
+              Hands-On Learning Pedagogy
+            </div>
+            
+            <h2 id="pedagogy-heading" class="section-title">
+              Why PulsoGen Delivers <span class="text-sky">Real Results</span>
+            </h2>
+            
+            <div class="pedagogy-feature-card">
+              <div class="pedagogy-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div class="pedagogy-info">
+                <h4>70% Hands-On Labs, 30% Theory</h4>
+                <p>No passive slide-reading. Every session is paired with live cloud sandboxes, terminal exercises, and code walkthroughs under senior engineer supervision.</p>
+              </div>
+            </div>
+
+            <div class="pedagogy-feature-card">
+              <div class="pedagogy-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+              </div>
+              <div class="pedagogy-info">
+                <h4>GCP Cloud Infrastructure Access</h4>
+                <p>Gain real-world experience configuring Google Cloud Platform (Compute Engine, BigQuery, Vertex AI) and containerized Docker clusters directly.</p>
+              </div>
+            </div>
+
+            <div class="pedagogy-feature-card">
+              <div class="pedagogy-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div class="pedagogy-info">
+                <h4>1:1 Mock Interviews with Tech Leads</h4>
+                <p>Prepare with rigorous technical mock interviews, system design discussions, and coding challenge drills modeled after top product & service companies.</p>
+              </div>
+            </div>
+
+            <div class="pedagogy-feature-card">
+              <div class="pedagogy-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <div class="pedagogy-info">
+                <h4>Production GitHub Portfolio</h4>
+                <p>Graduate with 4 to 8 publicly deployed repositories featuring clean documentation, CI/CD badges, and architecture schematics that stand out to recruiters.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Visual Showcase with Stat Overlay -->
+          <div class="pedagogy-visual">
+            <figure class="pedagogy-image-stack tilt-card-3d glass-card-3d">
+              <img 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=90" 
+                alt="Ultra-sharp high definition photograph of senior IT mentor reviewing code and providing 1-on-1 career guidance to student" 
+                width="600" 
+                height="420" 
+                loading="lazy"
+              >
+              <div class="pedagogy-stat-overlay" data-3d-depth="25">
+                <div>
+                  <div class="overlay-stat-num">1:1</div>
+                  <div class="overlay-stat-label">Mentorship Ratio</div>
+                </div>
+                <div>
+                  <div class="overlay-stat-num">500+</div>
+                  <div class="overlay-stat-label">Interview Q Bank</div>
+                </div>
+                <div>
+                  <div class="overlay-stat-num">100%</div>
+                  <div class="overlay-stat-label">Live Cloud Labs</div>
+                </div>
+              </div>
+            </figure>
+          </div>
+
+        </div>
+
+        <!-- Institutional Comparison Table -->
+        <div class="comparison-wrapper">
+          <div class="comparison-header">
+            <h3>How PulsoGen Compares to Traditional Coaching</h3>
+            <span class="badge badge-sky">Proven Methodology</span>
+          </div>
+          <div class="table-responsive">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th scope="col" style="width: 35%;">Key Feature</th>
+                  <th scope="col" class="pulsogen-col" style="width: 35%;">PulsoGen IT Academy</th>
+                  <th scope="col" style="width: 30%;">Traditional Coaching Institutes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Hands-On Lab Time</strong></td>
+                  <td class="pulsogen-col">70% practical coding, live cloud deployments & sandboxes</td>
+                  <td>Mostly PPT slide lectures with limited practice</td>
+                </tr>
+                <tr>
+                  <td><strong>Cloud & Tools Covered</strong></td>
+                  <td class="pulsogen-col">GCP, Vertex AI, Docker, Kubernetes, Spark, Git, LangChain</td>
+                  <td>Outdated local setup; limited or no cloud access</td>
+                </tr>
+                <tr>
+                  <td><strong>Portfolio Output</strong></td>
+                  <td class="pulsogen-col">4–8 production GitHub repos with live web endpoints</td>
+                  <td>Generic tutorial code copied from textbooks</td>
+                </tr>
+                <tr>
+                  <td><strong>Interview Preparation</strong></td>
+                  <td class="pulsogen-col">Personalized 1:1 tech leads mock interviews & resume review</td>
+                  <td>Group briefings or generic question PDFs</td>
+                </tr>
+                <tr>
+                  <td><strong>Salary Transparency</strong></td>
+                  <td class="pulsogen-col">Honest indicative CTC benchmarks backed by real skills & projects</td>
+                  <td>Unrealistic "100% guaranteed salary" hype</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: INTERACTIVE QUIZ: FIND YOUR IDEAL TRACK -->
+    <section id="track-quiz" class="section section-alt" aria-labelledby="quiz-heading">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="dot" aria-hidden="true"></span>
+            3-Question Skill Finder
+          </div>
+          <h2 id="quiz-heading" class="section-title">
+            Not Sure Which Track <span class="text-sky">Fits You Best?</span>
+          </h2>
+          <p class="section-subtitle">
+            Answer 3 quick questions about your current technical experience and dream IT goals to receive our tailored program recommendation.
+          </p>
+        </div>
+
+        <div class="quiz-container">
+          
+          <!-- Step 1 -->
+          <div class="quiz-step active" id="quizStep1">
+            <div class="quiz-step-indicator">
+              <span class="badge badge-sky">Question 1 of 3</span>
+              <span style="font-size: 0.85rem; color: var(--slate-500); font-weight: 600;">Current Technical Skill</span>
+            </div>
+            <div class="quiz-step-title">What is your current coding and IT background?</div>
+            <div class="quiz-options-list">
+              <button type="button" class="quiz-option-btn" data-step="1" data-value="beginner">
+                <span>🌱 Absolute Beginner / Non-Technical Degree / Fresh Graduate</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+              <button type="button" class="quiz-option-btn" data-step="1" data-value="intermediate">
+                <span>💻 Know basic Python, SQL queries, or basic Linux shell commands</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+              <button type="button" class="quiz-option-btn" data-step="1" data-value="experienced">
+                <span>🚀 Working Developer / Systems Engineer seeking AI & Cloud upgrade</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="quiz-step" id="quizStep2">
+            <div class="quiz-step-indicator">
+              <span class="badge badge-sky">Question 2 of 3</span>
+              <span style="font-size: 0.85rem; color: var(--slate-500); font-weight: 600;">Target Career Direction</span>
+            </div>
+            <div class="quiz-step-title">Which career pathway sounds most exciting to you?</div>
+            <div class="quiz-options-list">
+              <button type="button" class="quiz-option-btn" data-step="2" data-value="support">
+                <span>🛠️ System Operations, SQL Administration & Python Automation (₹2.5–6L start)</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+              <button type="button" class="quiz-option-btn" data-step="2" data-value="data_devops">
+                <span>📊 Data Pipelines, Docker Containers & DevOps Cloud Infrastructure (₹3.5–10L start)</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+              <button type="button" class="quiz-option-btn" data-step="2" data-value="genai">
+                <span>🧠 Generative AI, LLMs, AI Agents & Cloud MLOps on GCP (₹5–12L start)</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="quiz-step" id="quizStep3">
+            <div class="quiz-step-indicator">
+              <span class="badge badge-sky">Question 3 of 3</span>
+              <span style="font-size: 0.85rem; color: var(--slate-500); font-weight: 600;">Preferred Portfolio Projects</span>
+            </div>
+            <div class="quiz-step-title">What kind of capstone would you feel proud to show in interviews?</div>
+            <div class="quiz-options-list">
+              <button type="button" class="quiz-option-btn" data-step="3" data-value="scripts">
+                <span>⚡ Automated Linux Log Monitoring & Relational Database Reporting</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+              <button type="button" class="quiz-option-btn" data-step="3" data-value="pipelines">
+                <span>🔄 Real-time Apache Spark ETL Stream & Kubernetes Cluster Deployments</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+              <button type="button" class="quiz-option-btn" data-step="3" data-value="agents">
+                <span>🤖 Autonomous Multi-Agent AI System with Tool-Calling & GCP Vertex AI</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Result Step -->
+          <div class="quiz-step" id="quizStepResult">
+            <div class="quiz-result-box">
+              <div class="trophy-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.45 1-1 1H7c-.55 0-1 .45-1 1v1h12v-1c0-.55-.45-1-1-1h-2c-.55 0-1-.45-1-1v-2.34c3.48-1.07 6-4.3 6-8.66V3H6v5c0 4.36 2.52 7.59 6 8.66z"></path></svg>
+              </div>
+              <span class="badge badge-emerald" style="margin-bottom: 0.75rem;">Recommended For You</span>
+              <h3 class="quiz-result-title" id="quizResultTitle">Foundation + Intermediate Specialization</h3>
+              <p style="font-size: 0.95rem; color: var(--slate-600); max-width: 600px; margin: 0 auto 2rem auto; line-height: 1.6;" id="quizResultDesc">
+                The gold standard for high-growth tech careers. Master Data Engineering, Docker, Kubernetes, CI/CD, and basic GenAI app development.
+              </p>
+
+              <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <a href="#courses" class="btn btn-primary btn-glow" id="quizResultCta">
+                  Explore Recommended Track
+                </a>
+                <button type="button" class="btn btn-secondary" id="quizRestartBtn">
+                  Take Quiz Again
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: INDUSTRY CAPSTONE PROJECTS -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="dot" aria-hidden="true"></span>
+            Real-World Capstones
+          </div>
+          <h2 id="projects-heading" class="section-title">
+            Projects Built By Our <span class="text-sky">Alumni</span>
+          </h2>
+          <p class="section-subtitle">
+            Recruiters hire skills they can see. Every PulsoGen learner completes industry-tested projects deployed directly to GitHub and cloud providers.
+          </p>
+        </div>
+
+        <!-- Live Lab & Cloud Sandbox Banner -->
+        <div class="lab-banner" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2rem; align-items: center; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 1px solid var(--sky-200); border-radius: var(--radius-xl); padding: 2rem; margin-bottom: 3rem; box-shadow: var(--shadow-md);">
+          <div>
+            <span class="badge badge-sky" style="margin-bottom: 0.75rem;">Interactive Cloud Sandbox</span>
+            <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--slate-900); margin-bottom: 0.75rem;">
+              Code Directly in Dedicated <span class="text-sky">Cloud Workstations</span>
+            </h3>
+            <p style="font-size: 0.92rem; color: var(--slate-600); line-height: 1.6; margin-bottom: 1.25rem;">
+              You won't struggle with complex local software installations or machine constraints. PulsoGen provides pre-configured browser-accessible Linux VMs, PostgreSQL databases, Docker daemons, and Google Cloud Platform sandbox accounts with Vertex AI access.
+            </p>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <span class="badge badge-emerald">✓ Zero Setup Hassle</span>
+              <span class="badge badge-sky">✓ Pre-loaded Datasets & Repos</span>
+              <span class="badge badge-sky">✓ 24/7 Lab Access</span>
+            </div>
+          </div>
+          <figure class="tilt-card-3d" style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); height: 260px;">
+            <img 
+              src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=90" 
+              alt="Ultra-sharp high definition photograph of cloud computing lab workstations and dual 4K monitors" 
+              width="450" 
+              height="260" 
+              loading="lazy"
+              style="width: 100%; height: 100%; object-fit: cover;"
+            >
+          </figure>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Capstone 1 -->
+          <article class="project-card">
+            <span class="project-tag">Foundation Capstone</span>
+            <h3 class="project-title">Automated Server Health & SQL Audit Engine</h3>
+            <p class="project-desc">
+              Built an automated Bash & Python utility that inspects Linux kernel parameters, memory usage, triggers alerts on slow SQL queries, and outputs automated HTML diagnostic reports.
+            </p>
+            <div class="project-stack">
+              <span>Linux</span>
+              <span>Bash</span>
+              <span>Python</span>
+              <span>PostgreSQL</span>
+              <span>Cron</span>
+            </div>
+          </article>
+
+          <!-- Capstone 2 -->
+          <article class="project-card">
+            <span class="project-tag">Data Engineering Capstone</span>
+            <h3 class="project-title">Real-Time E-Commerce Streaming ETL Pipeline</h3>
+            <p class="project-desc">
+              Constructed high-throughput data pipelines using Apache Spark and Airflow. Ingests streaming transaction events, cleans schema discrepancies, and updates star-schema tables in BigQuery.
+            </p>
+            <div class="project-stack">
+              <span>Apache Spark</span>
+              <span>Airflow</span>
+              <span>SQL</span>
+              <span>BigQuery</span>
+              <span>Kafka</span>
+            </div>
+          </article>
+
+          <!-- Capstone 3 -->
+          <article class="project-card">
+            <span class="project-tag">DevOps Capstone</span>
+            <h3 class="project-title">Containerized Microservices CI/CD on Kubernetes</h3>
+            <p class="project-desc">
+              Packaged Python microservices using multi-stage Docker builds. Configured declarative Kubernetes manifests with rolling updates and automated Jenkins GitHub webhook testing.
+            </p>
+            <div class="project-stack">
+              <span>Docker</span>
+              <span>Kubernetes</span>
+              <span>Jenkins</span>
+              <span>Git</span>
+              <span>Helm</span>
+            </div>
+          </article>
+
+          <!-- Capstone 4 -->
+          <article class="project-card">
+            <span class="project-tag">Generative AI Capstone</span>
+            <h3 class="project-title">Enterprise Knowledge Base RAG Assistant</h3>
+            <p class="project-desc">
+              Engineered a production-ready Retrieval-Augmented Generation application. Embeds enterprise PDFs into vector databases (Pinecone) with hybrid search and hallucination guardrails.
+            </p>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>LangChain</span>
+              <span>Pinecone</span>
+              <span>OpenAI API</span>
+              <span>FastAPI</span>
+            </div>
+          </article>
+
+          <!-- Capstone 5 -->
+          <article class="project-card">
+            <span class="project-tag">Agentic AI Capstone</span>
+            <h3 class="project-title">Autonomous Multi-Agent Market Research Team</h3>
+            <p class="project-desc">
+              Orchestrated an agentic team using CrewAI and LangGraph. Agents autonomously search web APIs, cross-reference financial data, generate summary charts, and draft PDF reports with zero human intervention.
+            </p>
+            <div class="project-stack">
+              <span>Agentic AI</span>
+              <span>CrewAI</span>
+              <span>LangGraph</span>
+              <span>Tool Use</span>
+              <span>Python</span>
+            </div>
+          </article>
+
+          <!-- Capstone 6 -->
+          <article class="project-card">
+            <span class="project-tag">Cloud MLOps Capstone</span>
+            <h3 class="project-title">End-to-End MLOps Pipeline on Google Cloud (GCP)</h3>
+            <p class="project-desc">
+              Trained deep learning classification models and automated tracking with MLflow. Deployed scalable REST inference endpoints onto GCP Vertex AI with drift monitoring and CI/CD triggers.
+            </p>
+            <div class="project-stack">
+              <span>GCP Vertex AI</span>
+              <span>MLflow</span>
+              <span>PyTorch</span>
+              <span>Docker</span>
+              <span>Cloud Run</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: STUDENT REVIEWS & PLACEMENTS (3D MOVING MARQUEE) -->
+    <section id="testimonials" class="section section-alt" aria-labelledby="reviews-heading">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge tech-pill-3d">
+            <span class="dot" aria-hidden="true"></span>
+            Alumni Success Stories & Placements
+          </div>
+          <h2 id="reviews-heading" class="section-title">
+            Real Stories, Real <span class="text-sky">Career Breakthroughs</span>
+          </h2>
+          <p class="section-subtitle">
+            Hover over any review to pause and read. Over 850+ graduates transitioned into high-growth Data, DevOps, and Generative AI careers.
+          </p>
+
+          <!-- Animation Control Bar -->
+          <div style="display: flex; justify-content: center; align-items: center; gap: 0.75rem; margin-top: 1rem;">
+            <button type="button" class="btn btn-secondary btn-sm" id="toggleReviewsMarqueeBtn" style="border-radius: 9999px; font-size: 0.78rem; padding: 0.4rem 1rem;">
+              <span id="marqueeBtnIcon">⏸</span> <span id="marqueeBtnText">Pause Reviews Scroll</span>
+            </button>
+            <span style="font-size: 0.78rem; color: var(--slate-500); font-weight: 600;">(Move cursor to pause automatically)</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 3D MOVING REVIEWS MARQUEE CONTAINER (FULL WIDTH WITH OVERFLOW HIDE) -->
+      <div class="reviews-marquee-container" id="reviewsMarqueeContainer" aria-label="Moving student review wall">
+        
+        <!-- Track Row 1 (Moving Left) -->
+        <div class="reviews-marquee-track" id="reviewsTrack1">
+          
+          <!-- Review 1 -->
+          <article class="testimonial-card tilt-card-3d glass-card-3d">
+            <div class="stars-rating" aria-label="5 stars rating">★★★★★</div>
+            <p class="testimonial-text">
+              "I was working in non-IT tech support at ₹2.8 LPA. PulsoGen's Foundation + Intermediate track taught me Linux, SQL, and Apache Spark with pure hands-on labs. Within 3 months of graduation, I joined as a Junior Data Engineer at ₹8.5 LPA!"
+            </p>
+            <div class="student-profile">
+              <div class="student-avatar" style="background: #e0f2fe; color: #0284c7; display: flex; align-items: center; justify-content: center; font-weight: 800;">RK</div>
+              <div class="student-info">
+                <div class="student-name">Rahul K.</div>
+                <div class="student-role">Junior Data Engineer</div>
+                <div class="hike-tag">⚡ Non-IT Support to ₹8.5 LPA (200% Hike)</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 2 -->
+          <article class="testimonial-card tilt-card-3d glass-card-3d">
+            <div class="stars-rating" aria-label="5 stars rating">★★★★★</div>
+            <p class="testimonial-text">
+              "The Advanced AI Track is unmatched. While other institutes only talk about basic ChatGPT prompts, PulsoGen had us building real Agentic AI with LangGraph and deploying onto Google Cloud Vertex AI. Landed a GenAI Developer role at ₹11 LPA as a fresher!"
+            </p>
+            <div class="student-profile">
+              <div class="student-avatar" style="background: #dbeafe; color: #1d4ed8; display: flex; align-items: center; justify-content: center; font-weight: 800;">PS</div>
+              <div class="student-info">
+                <div class="student-name">Pooja S.</div>
+                <div class="student-role">Generative AI Engineer</div>
+                <div class="hike-tag">⚡ College Fresher to ₹11 LPA Offer</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 3 -->
+          <article class="testimonial-card tilt-card-3d glass-card-3d">
+            <div class="stars-rating" aria-label="5 stars rating">★★★★★</div>
+            <p class="testimonial-text">
+              "The 1:1 mock interviews with senior tech leads were the game changer. They reviewed my GitHub repositories, grilled me on Linux kernel diagnostics and SQL optimization, and fixed my resume. Placed as a Database Support Engineer at ₹6 LPA!"
+            </p>
+            <div class="student-profile">
+              <div class="student-avatar" style="background: #f0fdf4; color: #166534; display: flex; align-items: center; justify-content: center; font-weight: 800;">AM</div>
+              <div class="student-info">
+                <div class="student-name">Anand M.</div>
+                <div class="student-role">SQL / Database Support Engineer</div>
+                <div class="hike-tag">⚡ Foundation Track Graduate (₹6 LPA)</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 4 -->
+          <article class="testimonial-card tilt-card-3d glass-card-3d">
+            <div class="stars-rating" aria-label="5 stars rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Transitioning from manual testing to DevOps felt daunting until I joined PulsoGen. Setting up Kubernetes pods, Docker builds, and Jenkins CI/CD pipelines in live cloud sandboxes gave me immense interview confidence. Offered ₹9.2 LPA!"
+            </p>
+            <div class="student-profile">
+              <div class="student-avatar" style="background: #fdf2f8; color: #be185d; display: flex; align-items: center; justify-content: center; font-weight: 800;">SD</div>
+              <div class="student-info">
+                <div class="student-name">Sneha Deshmukh</div>
+                <div class="student-role">Cloud DevOps Engineer</div>
+                <div class="hike-tag">⚡ Manual QA to DevOps (₹9.2 LPA)</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- DUPLICATE FOR SEAMLESS 50% SCROLL LOOP -->
+          <article class="testimonial-card tilt-card-3d glass-card-3d" aria-hidden="true">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "I was working in non-IT tech support at ₹2.8 LPA. PulsoGen's Foundation + Intermediate track taught me Linux, SQL, and Apache Spark with pure hands-on labs. Within 3 months of graduation, I joined as a Junior Data Engineer at ₹8.5 LPA!"
+            </p>
+            <div class="student-profile">
+              <div class="student-avatar" style="background: #e0f2fe; color: #0284c7; display: flex; align-items: center; justify-content: center; font-weight: 800;">RK</div>
+              <div class="student-info">
+                <div class="student-name">Rahul K.</div>
+                <div class="student-role">Junior Data Engineer</div>
+                <div class="hike-tag">⚡ Non-IT Support to ₹8.5 LPA (200% Hike)</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card tilt-card-3d glass-card-3d" aria-hidden="true">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "The Advanced AI Track is unmatched. While other institutes only talk about basic ChatGPT prompts, PulsoGen had us building real Agentic AI with LangGraph and deploying onto Google Cloud Vertex AI. Landed a GenAI Developer role at ₹11 LPA as a fresher!"
+            </p>
+            <div class="student-profile">
+              <div class="student-avatar" style="background: #dbeafe; color: #1d4ed8; display: flex; align-items: center; justify-content: center; font-weight: 800;">PS</div>
+              <div class="student-info">
+                <div class="student-name">Pooja S.</div>
+                <div class="student-role">Generative AI Engineer</div>
+                <div class="hike-tag">⚡ College Fresher to ₹11 LPA Offer</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card tilt-card-3d glass-card-3d" aria-hidden="true">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "The 1:1 mock interviews with senior tech leads were the game changer. They reviewed my GitHub repositories, grilled me on Linux kernel diagnostics and SQL optimization, and fixed my resume. Placed as a Database Support Engineer at ₹6 LPA!"
+            </p>
+            <div class="student-profile">
+              <div class="student-avatar" style="background: #f0fdf4; color: #166534; display: flex; align-items: center; justify-content: center; font-weight: 800;">AM</div>
+              <div class="student-info">
+                <div class="student-name">Anand M.</div>
+                <div class="student-role">SQL / Database Support Engineer</div>
+                <div class="hike-tag">⚡ Foundation Track Graduate (₹6 LPA)</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card tilt-card-3d glass-card-3d" aria-hidden="true">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Transitioning from manual testing to DevOps felt daunting until I joined PulsoGen. Setting up Kubernetes pods, Docker builds, and Jenkins CI/CD pipelines in live cloud sandboxes gave me immense interview confidence. Offered ₹9.2 LPA!"
+            </p>
+            <div class="student-profile">
+              <div class="student-avatar" style="background: #fdf2f8; color: #be185d; display: flex; align-items: center; justify-content: center; font-weight: 800;">SD</div>
+              <div class="student-info">
+                <div class="student-name">Sneha Deshmukh</div>
+                <div class="student-role">Cloud DevOps Engineer</div>
+                <div class="hike-tag">⚡ Manual QA to DevOps (₹9.2 LPA)</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Track Row 2 (Moving Right / Reverse) -->
+        <div class="reviews-marquee-track reverse" id="reviewsTrack2" style="margin-top: 1.5rem;">
+          
+          <!-- Review 5 -->
+          <article class="testimonial-card tilt-card-3d glass-card-3d">
+            <div class="stars-rating" aria-label="5 stars rating">★★★★★</div>
+            <p class="testimonial-text">
+              "I had 3 years of backend experience and wanted to break into autonomous AI. The Agentic AI module with CrewAI and GCP Vertex AI MLOps was gold. Secured an Agentic AI Architect offer with ₹18.5 LPA package!"
+            </p>
+            <div class="student-profile">
+              <div class="student-avatar" style="background: #ede9fe; color: #6d28d9; display: flex; align-items: center; justify-content: center; font-weight: 800;">VV</div>
+              <div class="student-info">
+                <div class="student-name">Vikram Verma</div>
+                <div class="student-role">Agentic AI Specialist</div>
+                <div class="hike-tag">⚡ Experienced Upgrade to ₹18.5 LPA</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 6 -->
+          <article class="testimonial-card tilt-card-3d glass-card-3d">
+            <div class="stars-rating" aria-label="5 stars rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Coming from a mechanical engineering degree, coding was terrifying. PulsoGen's mentors guided me from basic Linux shell commands to writing clean object-oriented Python scripts. Cleared technical rounds for Python Automation Engineer at ₹5.5 LPA."
+            </p>
+            <div class="student-profile">
+              <div class="student-avatar" style="background: #fff7ed; color: #c2410c; display: flex; align-items: center; justify-content: center; font-weight: 800;">KP</div>
+              <div class="student-info">
+                <div class="student-name">Kiran Patel</div>
+                <div class="student-role">Python Automation Engineer</div>
+                <div class="hike-tag">⚡ Non-CS Graduate to ₹5.5 LPA</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 7 -->
+          <article class="testimonial-card tilt-card-3d glass-card-3d">
+            <div class="stars-rating" aria-label="5 stars rating">★★★★★</div>
+            <p class="testimonial-text">
+              "The hands-on capstone on BigQuery streaming pipelines using Apache Spark and Airflow was the exact architecture asked in my client interview. PulsoGen's pedagogy is 100% practical and relevant to real corporate requirements."
+            </p>
+            <div class="student-profile">
+              <div class="student-avatar" style="background: #ecfdf5; color: #047857; display: flex; align-items: center; justify-content: center; font-weight: 800;">DN</div>
+              <div class="student-info">
+                <div class="student-name">Divya Nair</div>
+                <div class="student-role">BigQuery & Cloud Data Engineer</div>
+                <div class="hike-tag">⚡ Placed at ₹12.5 LPA</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 8 -->
+          <article class="testimonial-card tilt-card-3d glass-card-3d">
+            <div class="stars-rating" aria-label="5 stars rating">★★★★★</div>
+            <p class="testimonial-text">
+              "The weekend batch timings were ideal for working professionals like me. Recorded lectures and 24/7 cloud sandbox access meant I could practice Docker & Kubernetes deployments even late at night after my work shift."
+            </p>
+            <div class="student-profile">
+              <div class="student-avatar" style="background: #f0f9ff; color: #0369a1; display: flex; align-items: center; justify-content: center; font-weight: 800;">KR</div>
+              <div class="student-info">
+                <div class="student-name">Karthik Reddy</div>
+                <div class="student-role">Cloud Infrastructure Engineer</div>
+                <div class="hike-tag">⚡ Promoted & Switched to ₹7.8 LPA</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- DUPLICATE FOR SEAMLESS 50% SCROLL LOOP -->
+          <article class="testimonial-card tilt-card-3d glass-card-3d" aria-hidden="true">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "I had 3 years of backend experience and wanted to break into autonomous AI. The Agentic AI module with CrewAI and GCP Vertex AI MLOps was gold. Secured an Agentic AI Architect offer with ₹18.5 LPA package!"
+            </p>
+            <div class="student-profile">
+              <div class="student-avatar" style="background: #ede9fe; color: #6d28d9; display: flex; align-items: center; justify-content: center; font-weight: 800;">VV</div>
+              <div class="student-info">
+                <div class="student-name">Vikram Verma</div>
+                <div class="student-role">Agentic AI Specialist</div>
+                <div class="hike-tag">⚡ Experienced Upgrade to ₹18.5 LPA</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card tilt-card-3d glass-card-3d" aria-hidden="true">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Coming from a mechanical engineering degree, coding was terrifying. PulsoGen's mentors guided me from basic Linux shell commands to writing clean object-oriented Python scripts. Cleared technical rounds for Python Automation Engineer at ₹5.5 LPA."
+            </p>
+            <div class="student-profile">
+              <div class="student-avatar" style="background: #fff7ed; color: #c2410c; display: flex; align-items: center; justify-content: center; font-weight: 800;">KP</div>
+              <div class="student-info">
+                <div class="student-name">Kiran Patel</div>
+                <div class="student-role">Python Automation Engineer</div>
+                <div class="hike-tag">⚡ Non-CS Graduate to ₹5.5 LPA</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card tilt-card-3d glass-card-3d" aria-hidden="true">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "The hands-on capstone on BigQuery streaming pipelines using Apache Spark and Airflow was the exact architecture asked in my client interview. PulsoGen's pedagogy is 100% practical and relevant to real corporate requirements."
+            </p>
+            <div class="student-profile">
+              <div class="student-avatar" style="background: #ecfdf5; color: #047857; display: flex; align-items: center; justify-content: center; font-weight: 800;">DN</div>
+              <div class="student-info">
+                <div class="student-name">Divya Nair</div>
+                <div class="student-role">BigQuery & Cloud Data Engineer</div>
+                <div class="hike-tag">⚡ Placed at ₹12.5 LPA</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card tilt-card-3d glass-card-3d" aria-hidden="true">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "The weekend batch timings were ideal for working professionals like me. Recorded lectures and 24/7 cloud sandbox access meant I could practice Docker & Kubernetes deployments even late at night after my work shift."
+            </p>
+            <div class="student-profile">
+              <div class="student-avatar" style="background: #f0f9ff; color: #0369a1; display: flex; align-items: center; justify-content: center; font-weight: 800;">KR</div>
+              <div class="student-info">
+                <div class="student-name">Karthik Reddy</div>
+                <div class="student-role">Cloud Infrastructure Engineer</div>
+                <div class="hike-tag">⚡ Promoted & Switched to ₹7.8 LPA</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+      <div class="container" style="margin-top: 3.5rem;">
+        <!-- Hiring Partner Networks with Continuous Marquee -->
+        <div class="partners-wrapper">
+          <div class="partners-subtitle">Our Alumni Work Across Leading Tech Employers & Consultancies</div>
+          
+          <div class="partners-marquee-container" aria-label="Hiring Partners List">
+            <div class="partners-marquee-track">
+              <div class="partner-logo-item">TCS</div>
+              <div class="partner-logo-item">Infosys</div>
+              <div class="partner-logo-item">Wipro</div>
+              <div class="partner-logo-item">Accenture</div>
+              <div class="partner-logo-item">Cognizant</div>
+              <div class="partner-logo-item">Tech Mahindra</div>
+              <div class="partner-logo-item">Capgemini</div>
+              <div class="partner-logo-item">HCLTech</div>
+              <div class="partner-logo-item">Mindtree</div>
+              <div class="partner-logo-item">Persistent Systems</div>
+              <!-- Duplicate set for seamless loop -->
+              <div class="partner-logo-item" aria-hidden="true">TCS</div>
+              <div class="partner-logo-item" aria-hidden="true">Infosys</div>
+              <div class="partner-logo-item" aria-hidden="true">Wipro</div>
+              <div class="partner-logo-item" aria-hidden="true">Accenture</div>
+              <div class="partner-logo-item" aria-hidden="true">Cognizant</div>
+              <div class="partner-logo-item" aria-hidden="true">Tech Mahindra</div>
+              <div class="partner-logo-item" aria-hidden="true">Capgemini</div>
+              <div class="partner-logo-item" aria-hidden="true">HCLTech</div>
+              <div class="partner-logo-item" aria-hidden="true">Mindtree</div>
+              <div class="partner-logo-item" aria-hidden="true">Persistent Systems</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FREQUENTLY ASKED QUESTIONS -->
+    <section id="faqs" class="section" aria-labelledby="faq-heading">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="dot" aria-hidden="true"></span>
+            Got Questions?
+          </div>
+          <h2 id="faq-heading" class="section-title">
+            Frequently Asked <span class="text-sky">Questions</span>
+          </h2>
+          <p class="section-subtitle">
+            Clear answers to help you choose the right learning path, understand placement assistance, and make informed career decisions.
+          </p>
+        </div>
+
+        <div class="faq-accordion" role="region" aria-label="Frequently Asked Questions Accordion">
+          
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>Who is eligible for the Foundation course? Can non-technical graduates enroll?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                Yes! The Foundation Track (Linux, SQL & Python) is designed from ground zero. Any graduate (B.E, B.Tech, B.Sc, BCA, B.Com, or other disciplines) with basic computer literacy can join. We teach fundamental operating system concepts, querying logic, and scripting step-by-step with practical assignments.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>What is the difference between Foundation, Intermediate, and Advanced tracks?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                <strong>Foundation</strong> focuses on core sysadmin and automation skills (Linux CLI, SQL databases, Python) targeting support and junior developer roles (₹2.5–6 LPA).<br>
+                <strong>Intermediate</strong> expands into scalable cloud systems (Data Engineering with Spark/Airflow, DevOps with Docker/K8s, and modern GenAI app development) for roles like Data Engineer & DevOps Engineer (₹3.5–10 LPA).<br>
+                <strong>Advanced</strong> covers enterprise Machine Learning, PyTorch, Generative AI fine-tuning, Agentic AI, and Google Cloud Platform MLOps (₹5–12 LPA fresher, up to ₹30 LPA experienced).
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>Are the salary ranges guaranteed after completing the training?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                No credible institute can guarantee an exact salary package. As stated in our official brochure, salary packages are indicative estimates for the Indian IT job market. Actual compensation depends entirely on your demonstrated technical capability, capstone projects, certifications, company requirements, location, and interview performance. We provide comprehensive interview coaching, portfolio preparation, and placement connection assistance.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>What are the batch timings and can working professionals attend?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                We offer both Weekday batches (Morning & Evening sessions for college students and job seekers) and Weekend Intensive batches (Saturday & Sunday sessions designed specifically for working professionals). All live sessions are recorded and uploaded to the student portal for lifetime access.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>Do you provide real cloud infrastructure and GCP access during classes?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                Yes! Every student gets structured cloud lab access, including Google Cloud Platform credits, Linux virtual machine instances, and PostgreSQL database endpoints to write and test code in production-equivalent environments.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>Are there installment or EMI payment facilities available?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                Yes. We offer flexible zero-cost EMI plans (3, 6, or 9 months) and structured split installments through authorized education finance partners so financial constraints do not hinder your career transformation.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: ENROLL / BOOK FREE DEMO CLASS -->
+    <section id="contact" class="section section-alt" aria-labelledby="contact-heading">
+      <div class="container">
+        
+        <div class="enroll-grid">
+          
+          <div class="enroll-info">
+            <div class="section-badge">
+              <span class="dot" aria-hidden="true"></span>
+              Admissions & Counselling
+            </div>
+            <h2 id="contact-heading">
+              Reserve Your Seat for the <span class="text-sky">Next Live Demo Class</span>
+            </h2>
+            <p>
+              Experience our live interactive teaching pedagogy firsthand. Attend a 90-minute live coding session, tour our cloud sandbox labs, and get 1:1 technical roadmap advice from an industry lead.
+            </p>
+
+            <div class="enroll-benefits">
+              <div class="enroll-benefit-item">
+                <div class="benefit-icon-check">✓</div>
+                <span>100% Free Live Session with No Obligation</span>
+              </div>
+              <div class="enroll-benefit-item">
+                <div class="benefit-icon-check">✓</div>
+                <span>Complete Track Syllabus PDF & Interview Question Bank</span>
+              </div>
+              <div class="enroll-benefit-item">
+                <div class="benefit-icon-check">✓</div>
+                <span>Direct Q&A with Senior GCP Cloud & AI Engineers</span>
+              </div>
+              <div class="enroll-benefit-item">
+                <div class="benefit-icon-check">✓</div>
+                <span>Early Bird Scholarship Eligibility Assessment</span>
+              </div>
+            </div>
+
+            <!-- Campus Image Preview -->
+            <figure class="tilt-card-3d" style="margin-top: 2rem; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
+              <img 
+                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=90" 
+                alt="Ultra-sharp high definition photograph of students celebrating successful course completion and career placement milestone" 
+                width="500" 
+                height="300" 
+                loading="lazy"
+              >
+            </figure>
+          </div>
+
+          <!-- Lead Capture Form Card -->
+          <div class="form-card tilt-card-3d glass-card-3d">
+            <h3 class="form-card-title">Book Your Free Live Demo</h3>
+            <p class="form-card-subtitle">Fill out the quick form below to receive your personalized session link & access pass.</p>
+
+            <form id="leadEnrollForm" class="lead-form" novalidate>
+              
+              <div class="form-group">
+                <label for="leadName">Full Name *</label>
+                <input type="text" id="leadName" name="name" placeholder="e.g. Rahul Sharma" required>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="leadEmail">Email Address *</label>
+                  <input type="email" id="leadEmail" name="email" placeholder="rahul@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="leadPhone">WhatsApp / Mobile *</label>
+                  <input type="tel" id="leadPhone" name="phone" placeholder="e.g. +91 98XXXXXXXX" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="leadTrack">Preferred Track *</label>
+                  <select id="leadTrack" name="track" required>
+                    <option value="" disabled selected>Select Track</option>
+                    <option value="foundation">1. Foundation (Linux, SQL, Python)</option>
+                    <option value="intermediate">2. Intermediate (Data Eng & DevOps)</option>
+                    <option value="advanced">3. Advanced (ML, GenAI, Agentic AI & GCP)</option>
+                    <option value="not_sure">Not Sure (Need Counselling)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="leadBatch">Preferred Timing *</label>
+                  <select id="leadBatch" name="batch" required>
+                    <option value="weekend_morning" selected>Weekend (Sat-Sun Morning)</option>
+                    <option value="weekday_evening">Weekday (Mon-Fri Evening)</option>
+                    <option value="weekday_morning">Weekday (Mon-Fri Morning)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="leadMessage">Any Specific Career Questions? (Optional)</label>
+                <textarea id="leadMessage" name="message" rows="3" placeholder="Tell us about your background or target roles..."></textarea>
+              </div>
+
+              <label class="form-checkbox-label">
+                <input type="checkbox" id="leadConsent" required checked>
+                <span>I agree to receive demo session links and career updates via WhatsApp / Email.</span>
+              </label>
+
+              <button type="submit" class="btn btn-primary btn-lg btn-glow" style="width: 100%; margin-top: 0.5rem;">
+                Confirm Free Demo Seat
+              </button>
+            </form>
+
+            <!-- Direct Google Form Quick Actions -->
+            <div style="background: rgba(14, 165, 233, 0.08); border: 1px dashed var(--sky-400); border-radius: var(--radius-lg); padding: 1.25rem; margin-top: 1.5rem; text-align: center;">
+              <div style="font-size: 0.85rem; font-weight: 700; color: var(--sky-900); margin-bottom: 0.6rem;">
+                Prefer to enroll or register directly via Google Forms?
+              </div>
+              <div style="display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap;">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="btn btn-primary btn-sm btn-3d">
+                  Confirm Batch Enrollment (Form)
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScu2wUqKz4HDeXM9sKUUvp8BlwebQ2eAm156qD3MqVPBlk1_w/viewform?usp=dialog" 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="btn btn-secondary btn-sm">
+                  Book Free Demo & Admissions (Form)
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL: DOWNLOAD DETAILED SYLLABUS & BROCHURE -->
+  <div class="modal-overlay" id="brochureModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn modal-close-trigger" aria-label="Close dialog">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <div style="width: 52px; height: 52px; background: var(--sky-100); color: var(--sky-600); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem auto;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        </div>
+        <h3 id="modalTitle" style="font-size: 1.35rem; font-weight: 800; color: var(--slate-900);">
+          Download Official IT Career Guide
+        </h3>
+        <p style="font-size: 0.85rem; color: var(--slate-500); margin-top: 0.35rem;">
+          Get complete day-by-day syllabi, capstone project blueprints, and Indian IT salary matrix in one document.
+        </p>
+      </div>
+
+      <form id="brochureDownloadForm" class="lead-form">
+        <div class="form-group">
+          <label for="modalName">Your Name *</label>
+          <input type="text" id="modalName" placeholder="e.g. Priya Sharma" required>
+        </div>
+
+        <div class="form-group">
+          <label for="modalEmail">Email Address *</label>
+          <input type="email" id="modalEmail" placeholder="priya@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="modalTrack">Select Primary Track Interest *</label>
+          <select id="modalTrack" required>
+            <option value="All Programs">All 3 Tracks (Foundation, Intermediate, Advanced)</option>
+            <option value="Foundation Track">Foundation (Linux, SQL & Python)</option>
+            <option value="Intermediate Track">Foundation + Intermediate (Data Eng & DevOps)</option>
+            <option value="Advanced Track">Advanced (ML, GenAI, Agentic AI & GCP)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-glow" style="width: 100%; margin-top: 0.5rem;">
+          Download PDF Guide Now
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    <span id="toastMessage">Action completed successfully.</span>
+  </div>
+
+  <!-- FLOATING ACTIONS: WHATSAPP DIRECT COUNSELLING & BACK TO TOP -->
+  <div class="floating-actions-container" aria-label="Quick Actions">
+    
+    <!-- WhatsApp Floating Prompt Bubble -->
+    <div class="whatsapp-prompt-bubble" id="whatsappPromptBubble" role="dialog" aria-label="Academic counsellor online">
+      <button type="button" class="whatsapp-bubble-close" id="closeWhatsAppBubble" aria-label="Close message">&times;</button>
+      <div class="bubble-header">
+        <div class="bubble-avatar-status">
+          <span class="online-indicator" aria-hidden="true"></span>
+          <strong>Academic Counsellor</strong>
+        </div>
+        <span class="bubble-badge">Online</span>
+      </div>
+      <p class="bubble-msg">
+        👋 Hi! Have questions about January 2027 batches, course syllabus, or scholarships? Connect with our academic lead directly on WhatsApp!
+      </p>
+      <a href="https://wa.me/919503800703?text=Hello%20PulsoGen%20IT%20Academy%2C%20I%20want%20to%20connect%20with%20an%20academic%20counsellor%20regarding%20the%20January%202027%20IT%20coaching%20batches." 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="bubble-action-btn">
+        <span>Chat on WhatsApp</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      </a>
+    </div>
+
+    <!-- Direct WhatsApp Floating Button -->
+    <a href="https://wa.me/919503800703?text=Hello%20PulsoGen%20IT%20Academy%2C%20I%20want%20to%20connect%20with%20an%20academic%20counsellor%20regarding%20the%20January%202027%20IT%20coaching%20batches." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="floating-btn floating-btn-whatsapp" 
+       id="whatsappFloatingBtn"
+       aria-label="Connect with Academic Counsellor on WhatsApp">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+    </a>
+
+    <!-- Scroll Back to Top Button -->
+    <button type="button" class="floating-btn floating-btn-top" id="backToTopBtn" aria-label="Back to top of page">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo" aria-label="PulsoGen IT Academy Home">
+            <div class="brand-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <span class="brand-text">Pulso<span>Gen</span></span>
+              <span class="brand-tag" style="color: var(--sky-400);">IT Career Academy</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Empowering aspiring developers, support engineers, and career switchers with practical hands-on coaching in Linux, SQL, Python, Cloud Data Pipelines, DevOps, and cutting-edge Generative AI.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://wa.me/919503800703?text=Hello%20PulsoGen%20IT%20Academy%2C%20I%20want%20to%20connect%20with%20an%20academic%20counsellor" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp Counsellor"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Course Programs -->
+        <div class="footer-col">
+          <h4>Career Programs</h4>
+          <div class="footer-links-list">
+            <a href="#courses">Foundation: Linux, SQL & Python</a>
+            <a href="#courses">Data Engineering & Analytics</a>
+            <a href="#courses">DevOps & Cloud Automation</a>
+            <a href="#courses">Generative AI & Agentic AI</a>
+            <a href="#courses">Google Cloud Platform (GCP) MLOps</a>
+            <a href="#calculator">Career ROI Calculator</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Direct Admissions Forms & Links -->
+        <div class="footer-col">
+          <h4>Enrollment & Forms</h4>
+          <div class="footer-links-list">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8PyJWpAnaB-I1SDaE77lYGbn2ikJCYH2c-09KhsDJ2MzQzw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" style="color: var(--sky-400); font-weight: 700;">
+              → Confirm Batch Enrollment Form
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScu2wUqKz4HDeXM9sKUUvp8BlwebQ2eAm156qD3MqVPBlk1_w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" style="color: var(--sky-400); font-weight: 700;">
+              → Book Free Demo & Admissions Form
+            </a>
+            <a href="#january-2027-flyer">January 2027 Cohort Schedule</a>
+            <a href="#career-salaries">Salary Guide & Benchmark</a>
+            <a href="#pedagogy">Hands-on Pedagogy</a>
+            <a href="#projects">Alumni Capstones</a>
+            <a href="#testimonials">Moving Reviews Wall</a>
+            <a href="#faqs">Frequently Asked Questions</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Admissions & Campus -->
+        <div class="footer-col">
+          <h4>Admissions Office</h4>
+          <div class="footer-contact-info">
+            <div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>HITEC City Tech Park, Madhapur, Hyderabad, Telangana 500081</span>
+            </div>
+            <div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              <span>Daily Lab Hours: 08:00 AM – 09:30 PM IST (Mon–Sun)</span>
+            </div>
+            <div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>admissions@pulsogenacademy.com</span>
+            </div>
+            <div style="margin-top: 0.5rem;">
+              <a href="https://wa.me/919503800703?text=Hello%20PulsoGen%20IT%20Academy%2C%20I%20want%20to%20connect%20with%20an%20academic%20counsellor" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="width: 100%; justify-content: center; border-color: var(--sky-400); color: var(--sky-300);">
+                Connect on WhatsApp: +91 9503800703
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Legal & Disclaimer Notice -->
+      <div class="footer-bottom">
+        <div class="footer-disclaimer-notice">
+          <strong>Mandatory Compensation Disclaimer:</strong> Salary packages and CTC benchmarks cited across this website are indicative estimates synthesized for the Indian IT job market across enterprise support, data engineering, DevOps, and Generative AI roles. Actual offers depend strictly on demonstrated technical competence, live project quality, certifications, company evaluation, location, and candidate interview performance. PulsoGen IT Academy provides industry coaching and comprehensive placement assistance; training completion does not guarantee a specific salary or placement outcome.
+        </div>
+        
+        <div class="footer-bottom-row">
+          <div>© 2026 PulsoGen IT Academy. All rights reserved. Designed with Bright Sky & White precision.</div>
+          <div style="display: flex; gap: 1rem;">
+            <a href="#" style="color: var(--slate-400);">Privacy Policy</a>
+            <a href="#" style="color: var(--slate-400);">Terms of Service</a>
+            <a href="#" style="color: var(--slate-400);">Placement Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Script Execution -->
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,17 @@
+{
+  "name": "PulsoGen IT Academy - Career Acceleration & Coaching",
+  "short_name": "PulsoGen IT",
+  "description": "Premier IT Coaching in Linux, SQL, Python, Data Engineering, DevOps, Cloud & Generative AI.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5e9",
+  "icons": [
+    {
+      "src": "./assets/favicon.svg",
+      "sizes": "64x64 192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
